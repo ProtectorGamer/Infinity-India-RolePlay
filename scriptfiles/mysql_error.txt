@@ -1,0 +1,1569 @@
+[2020-08-13 10:02]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 8 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-13 11:57]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 12 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-13 17:05]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 12 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-14 00:52]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 10 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-14 01:07]
+Error ID: 1064
+Callback: 
+Query: UPDATE businesses SET name = 'Astro's Clothings' WHERE id = 6
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Clothings' WHERE id = 6' at line 1
+
+[2020-08-14 01:11]
+Error ID: 1064
+Callback: 
+Query: UPDATE businesses SET name = '[FF0000]Astro's Clothing' WHERE id = 6
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Clothing' WHERE id = 6' at line 1
+
+[2020-08-14 01:12]
+Error ID: 1064
+Callback: 
+Query: UPDATE businesses SET name = '[FF0000]Astro's Clothing' WHERE id = 6
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Clothing' WHERE id = 6' at line 1
+
+[2020-08-14 01:13]
+Error ID: 1064
+Callback: 
+Query: UPDATE businesses SET name = '[FF0000F]Astro's Clothing' WHERE id = 6
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Clothing' WHERE id = 6' at line 1
+
+[2020-08-14 01:16]
+Error ID: 1064
+Callback: 
+Query: UPDATE businesses SET name = '[#FF0000]Astro's Clothing' WHERE id = 6
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Clothing' WHERE id = 6' at line 1
+
+[2020-08-14 01:16]
+Error ID: 1064
+Callback: 
+Query: UPDATE businesses SET name = '[FFFFFF]Astro's Clothing' WHERE id = 6
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Clothing' WHERE id = 6' at line 1
+
+[2020-08-14 01:16]
+Error ID: 1064
+Callback: 
+Query: UPDATE businesses SET name = 'Astro's Clothing' WHERE id = 6
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Clothing' WHERE id = 6' at line 1
+
+[2020-08-15 09:50]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 11 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-15 09:53]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 11 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-17 15:07]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 60 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-17 19:38]
+Error ID: 1064
+Callback: 
+Query: UPDATE businesses SET name = 'Astro's Clothing' WHERE id = 6
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Clothing' WHERE id = 6' at line 1
+
+[2020-08-20 17:18]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 105 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-20 19:32]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 69 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-22 15:53]
+Error ID: 1054
+Callback: 
+Query: UPDATE businesses SET robbed = 3, robbing = 0 WHERE id = 28
+[!] Unknown column 'robbing' in 'field list'
+
+[2020-08-23 19:36]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 6 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-24 10:05]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 26 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-24 17:39]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 11 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-08-24 19:49]
+Error ID: 1054
+Callback: 
+Query: UPDATE businesses SET robbed = 3, robbing = 0 WHERE id = 6
+[!] Unknown column 'robbing' in 'field list'
+
+[2020-08-24 20:06]
+Error ID: 1054
+Callback: 
+Query: UPDATE businesses SET robbed = 3, robbing = 0 WHERE id = 25
+[!] Unknown column 'robbing' in 'field list'
+
+[2020-08-26 17:12]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 26 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-09-04 01:06]
+Error ID: 1054
+Callback: 
+Query: UPDATE businesses SET robbed = 3, robbing = 0 WHERE id = 4
+[!] Unknown column 'robbing' in 'field list'
+
+[2020-09-04 13:14]
+Error ID: 1146
+Callback: 
+Query: INSERT INTO vehicles (modelid, pos_x, pos_y, pos_z, pos_a, color1, color2, gangid, factiontype, respawndelay) VALUES(522, '1192.228', '-1323.474', '12.967', '355.96', 2, 2, 0, 1, 0)
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:14]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM vehicles WHERE id = LAST_INSERT_ID()
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:15]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 13
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:15]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 13
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:16]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 51
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:16]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 168
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:16]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 168
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:16]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 168
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:16]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 13
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:18]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 168
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-09-04 13:18]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 168
+[!] Table 'server_4684_pcrp.vehicles' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: 
+Query: TRUNCATE TABLE shots
+[!] Table 'Mark.shots' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM furniture
+[!] Table 'Mark.furniture' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM garages
+[!] Table 'Mark.garages' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: Graffiti_Load
+Query: SELECT * FROM graffiti
+[!] Table 'Mark.graffiti' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM factionranks
+[!] Table 'Mark.factionranks' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM factionskins
+[!] Table 'Mark.factionskins' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM factionpay
+[!] Table 'Mark.factionpay' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM divisions
+[!] Table 'Mark.divisions' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM lands
+[!] Table 'Mark.lands' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM landobjects
+[!] Table 'Mark.landobjects' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1054
+Callback: OnQueryFinished
+Query: SELECT * FROM vehicles WHERE ownerid = 0
+[!] Unknown column 'ownerid' in 'where clause'
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM gangs
+[!] Table 'Mark.gangs' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM gangranks
+[!] Table 'Mark.gangranks' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM gangskins
+[!] Table 'Mark.gangskins' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM points
+[!] Table 'Mark.points' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM turfs
+[!] Table 'Mark.turfs' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: Gate_Load
+Query: SELECT * FROM `gates`
+[!] Table 'Mark.gates' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: Object_Load
+Query: SELECT * FROM `object`
+[!] Table 'Mark.object' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: 
+Query: TRUNCATE TABLE shots
+[!] Table 'Mark.shots' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM furniture
+[!] Table 'Mark.furniture' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM garages
+[!] Table 'Mark.garages' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: Graffiti_Load
+Query: SELECT * FROM graffiti
+[!] Table 'Mark.graffiti' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM factionranks
+[!] Table 'Mark.factionranks' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM factionskins
+[!] Table 'Mark.factionskins' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM factionpay
+[!] Table 'Mark.factionpay' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM divisions
+[!] Table 'Mark.divisions' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM lands
+[!] Table 'Mark.lands' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM landobjects
+[!] Table 'Mark.landobjects' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1054
+Callback: OnQueryFinished
+Query: SELECT * FROM vehicles WHERE ownerid = 0
+[!] Unknown column 'ownerid' in 'where clause'
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM gangs
+[!] Table 'Mark.gangs' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM gangranks
+[!] Table 'Mark.gangranks' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM gangskins
+[!] Table 'Mark.gangskins' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM points
+[!] Table 'Mark.points' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM turfs
+[!] Table 'Mark.turfs' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: Gate_Load
+Query: SELECT * FROM `gates`
+[!] Table 'Mark.gates' doesn't exist
+
+[2020-10-14 10:09]
+Error ID: 1146
+Callback: Object_Load
+Query: SELECT * FROM `object`
+[!] Table 'Mark.object' doesn't exist
+
+[2020-10-14 10:11]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM bans WHERE username = 'Jack_Devil' OR ip = '49.144.175.70' OR ip LIKE '49.144.*.*'
+[!] Table 'Mark.bans' doesn't exist
+
+[2020-10-14 10:12]
+Error ID: 1146
+Callback: 
+Query: DELETE FROM shots WHERE (playerid = 0) OR (hitid = 0 AND hittype = 1)
+[!] Table 'Mark.shots' doesn't exist
+
+[2020-10-14 10:12]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM bans WHERE username = 'Jack_Devil' OR ip = '49.144.175.70' OR ip LIKE '49.144.*.*'
+[!] Table 'Mark.bans' doesn't exist
+
+[2020-10-14 10:12]
+Error ID: 1146
+Callback: 
+Query: DELETE FROM shots WHERE (playerid = 0) OR (hitid = 0 AND hittype = 1)
+[!] Table 'Mark.shots' doesn't exist
+
+[2020-10-14 10:18]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM bans WHERE username = 'Daisuke_Dalisay' OR ip = '112.204.171.137' OR ip LIKE '112.204.*.*'
+[!] Table 'Mark.bans' doesn't exist
+
+[2020-10-14 10:18]
+Error ID: 1146
+Callback: 
+Query: DELETE FROM shots WHERE (playerid = 0) OR (hitid = 0 AND hittype = 1)
+[!] Table 'Mark.shots' doesn't exist
+
+[2020-10-14 10:19]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM bans WHERE username = 'Daisuke_Dalisay' OR ip = '112.204.171.137' OR ip LIKE '112.204.*.*'
+[!] Table 'Mark.bans' doesn't exist
+
+[2020-10-14 10:20]
+Error ID: 1146
+Callback: 
+Query: DELETE FROM shots WHERE (playerid = 0) OR (hitid = 0 AND hittype = 1)
+[!] Table 'Mark.shots' doesn't exist
+
+[2020-10-14 10:31]
+Error ID: 1054
+Callback: OnQueryFinished
+Query: SELECT * FROM vehicles WHERE ownerid = 0
+[!] Unknown column 'ownerid' in 'where clause'
+
+[2020-10-14 10:31]
+Error ID: 1146
+Callback: Object_Load
+Query: SELECT * FROM `object`
+[!] Table 'Mark.object' doesn't exist
+
+[2020-10-14 10:36]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Jack_Devil (uid: 0) possibly teleport hacked (distance: 115.6)')
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:37]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Daisuke_Dalisay (uid: 0) possibly teleport hacked (distance: 180.6)')
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:37]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Daisuke_Dalisay', 'Daisuke_Dalisay', 'Explosion', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:37]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Daisuke_Dalisay', 'Daisuke_Dalisay', 'Explosion', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:39]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Daisuke_Dalisay', 'Daisuke_Dalisay', 'Explosion', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:39]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Daisuke_Dalisay', 'Daisuke_Dalisay', 'Explosion', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:41]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 10:41]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 0, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 10:41]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 10:41]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 10:41]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 50, hungertimer = 123, thirst = 99, thirsttimer = 3, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 10:48]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 10:48]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 0, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 10:48]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 10:48]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 10:48]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 0, hungertimer = 658, thirst = 0, thirsttimer = 658, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 10:48]
+Error ID: 1054
+Callback: OnQueryFinished
+Query: SELECT * FROM vehicles WHERE ownerid = 0
+[!] Unknown column 'ownerid' in 'where clause'
+
+[2020-10-14 10:48]
+Error ID: 1146
+Callback: Object_Load
+Query: SELECT * FROM `object`
+[!] Table 'Mark.object' doesn't exist
+
+[2020-10-14 10:51]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Jack_Devil (uid: 0) set Jack_Devil\'s (uid: 0) admin level to 7')
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:53]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Jack_Devil (uid: 0) set Jack_Devil\'s (uid: 0) hunger to 100')
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:53]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Jack_Devil (uid: 0) set Jack_Devil\'s (uid: 0) Thirst to 100')
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:55]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Jack_Devil (uid: 0) has made Jack_Devil (uid: 0) a faction moderator.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:55]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Jack_Devil (uid: 0) has made Jack_Devil (uid: 0) a gang moderator.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:57]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(1, '[PLRP]Mechanic', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 10:57]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(2, '[PLRP]Mechanic', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(3, 'daisuke', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 1, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 47, thirst = 97, thirsttimer = 32, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO vehicles (ownerid, owner, modelid, pos_x, pos_y, pos_z, pos_a, color1, color2) VALUES(0, 'Jack_Devil', 560, '1205.513', '-1337.985', '13.399', '357.911', 6, 6)
+[!] Unknown column 'ownerid' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Jack_Devil (uid: 0) has given Jack_Devil (uid: 0) their own Sultan.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 0
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 0
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 0
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 10:58]
+Error ID: 1054
+Callback: OnQueryFinished
+Query: SELECT id, modelid, pos_x, pos_y, pos_z, world FROM vehicles WHERE ownerid = 0
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 11:00]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:00]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 1, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:00]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:00]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:00]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 25, thirst = 97, thirsttimer = 17, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 11:00]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_punishments VALUES(null, NOW(), 'Jack_Devil (uid: 0) prisoned Jack_Devil (uid: 0) for 1 minutes, reason: Shit')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:01]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_vip VALUES(null, NOW(), 'Jack_Devil (uid: 0) has given Jack_Devil (uid: 0) a Platinum Donator package for 100 days.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:12]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Rence_Jimenez (uid: 0) possibly teleport hacked (distance: 115.7)')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 1, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 94, hungertimer = 122, thirst = 91, thirsttimer = 107, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 1, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 94, hungertimer = 131, thirst = 91, thirsttimer = 116, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 11:12]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Jack_Devil (uid: 0) set Rence_Jimenez\'s (uid: 0) admin level to 7')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:14]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(4, 'PLRP mech', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 11:14]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(5, 'PLRP mech', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 11:14]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(6, 'PLRP mech', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 11:14]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(7, 'PLRP mech', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 11:14]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(8, 'PLRP mech', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 11:16]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Jack_Devil (uid: 0) changed Jack_Devil\'s (uid: 0) name to Dick_Grayson.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:16]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_namechanges VALUES(null, NOW(), 'Jack_Devil (uid: 0) changed Jack_Devil\'s (uid: 0) name to Dick_Grayson.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET owner = 'Dick_Grayson' WHERE owner = 'Jack_Devil'
+[!] Unknown column 'owner' in 'where clause'
+
+[2020-10-14 11:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE businesses SET owner = 'Dick_Grayson' WHERE owner = 'Jack_Devil'
+[!] Unknown column 'owner' in 'where clause'
+
+[2020-10-14 11:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE vehicles SET owner = 'Dick_Grayson' WHERE owner = 'Jack_Devil'
+[!] Unknown column 'owner' in 'where clause'
+
+[2020-10-14 11:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 0, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 92, hungertimer = 24, thirst = 88, thirsttimer = 9, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 11:18]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Dick_Grayson', 'Rence_Jimenez', 'Deagle', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:18]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Dick_Grayson', 'Rence_Jimenez', 'Sniper', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:19]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Rence_Jimenez (uid: 0) gives a Sniper to Rence_Jimenez (uid: 0)')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:19]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Dick_Grayson', 'Rence_Jimenez', 'Sniper', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:20]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Dick_Grayson', 'Rence_Jimenez', 'Sniper', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:21]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Rence_Jimenez', 'Dick_Grayson', 'Combat shotgun', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:21]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO kills VALUES(null, 0, 0, 'Rence_Jimenez', 'Dick_Grayson', 'Combat shotgun', NOW())
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:24]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Dick_Grayson (uid: 0) changed Dick_Grayson\'s (uid: 0) name to Tommy_McAdam.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:24]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_namechanges VALUES(null, NOW(), 'Dick_Grayson (uid: 0) changed Dick_Grayson\'s (uid: 0) name to Tommy_McAdam.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET owner = 'Tommy_McAdam' WHERE owner = 'Dick_Grayson'
+[!] Unknown column 'owner' in 'where clause'
+
+[2020-10-14 11:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE businesses SET owner = 'Tommy_McAdam' WHERE owner = 'Dick_Grayson'
+[!] Unknown column 'owner' in 'where clause'
+
+[2020-10-14 11:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE vehicles SET owner = 'Tommy_McAdam' WHERE owner = 'Dick_Grayson'
+[!] Unknown column 'owner' in 'where clause'
+
+[2020-10-14 11:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 0, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 164, thirst = 99, thirsttimer = 44, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 11:25]
+Error ID: 1048
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Tommy_McAdam (uid: 0) has made Rence_Jimenez (uid: 0) a faction moderator.')
+[!] Column 'id' cannot be null
+
+[2020-10-14 11:26]
+Error ID: 1054
+Callback: 
+Query: INSERT INTO factions (id, name, type) VALUES(9, 'Mechanic', 7)
+[!] Unknown column 'id' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 0, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 1, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 130, thirst = 96, thirsttimer = 10, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: OnAdminCreateBusiness
+Query: INSERT INTO businesses (type, price, pos_x, pos_y, pos_z, pos_a, int_x, int_y, int_z, int_a, interior, outsideint, outsidevw) VALUES(1, 12000000, '1154.647', '-1440.157', '15.797', '-86.671', '316.287', '-169.647', '999.601', '0.0', 6, 0, 0)
+[!] Unknown column 'type' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: OnAdminCreateBusiness
+Query: INSERT INTO businesses (type, price, pos_x, pos_y, pos_z, pos_a, int_x, int_y, int_z, int_a, interior, outsideint, outsidevw) VALUES(1, 12000000, '1154.422', '-1440.287', '15.797', '-86.671', '316.287', '-169.647', '999.601', '0.0', 6, 0, 0)
+[!] Unknown column 'type' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: OnAdminCreateBusiness
+Query: INSERT INTO businesses (type, price, pos_x, pos_y, pos_z, pos_a, int_x, int_y, int_z, int_a, interior, outsideint, outsidevw) VALUES(1, 12000000, '1154.422', '-1440.287', '15.797', '-86.671', '316.287', '-169.647', '999.601', '0.0', 6, 0, 0)
+[!] Unknown column 'type' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: OnAdminCreateBusiness
+Query: INSERT INTO businesses (type, price, pos_x, pos_y, pos_z, pos_a, int_x, int_y, int_z, int_a, interior, outsideint, outsidevw) VALUES(1, 12000000, '1154.422', '-1440.287', '15.797', '-86.671', '316.287', '-169.647', '999.601', '0.0', 6, 0, 0)
+[!] Unknown column 'type' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: OnAdminCreateBusiness
+Query: INSERT INTO businesses (type, price, pos_x, pos_y, pos_z, pos_a, int_x, int_y, int_z, int_a, interior, outsideint, outsidevw) VALUES(1, 12000000, '1154.422', '-1440.287', '15.797', '-86.671', '316.287', '-169.647', '999.601', '0.0', 6, 0, 0)
+[!] Unknown column 'type' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: OnAdminCreateBusiness
+Query: INSERT INTO businesses (type, price, pos_x, pos_y, pos_z, pos_a, int_x, int_y, int_z, int_a, interior, outsideint, outsidevw) VALUES(1, 12000000, '1154.422', '-1440.287', '15.797', '-86.671', '316.287', '-169.647', '999.601', '0.0', 6, 0, 0)
+[!] Unknown column 'type' in 'field list'
+
+[2020-10-14 11:29]
+Error ID: 1054
+Callback: OnAdminCreateBusiness
+Query: INSERT INTO businesses (type, price, pos_x, pos_y, pos_z, pos_a, int_x, int_y, int_z, int_a, interior, outsideint, outsidevw) VALUES(1, 12000000, '1154.422', '-1440.287', '15.797', '-86.671', '316.287', '-169.647', '999.601', '0.0', 6, 0, 0)
+[!] Unknown column 'type' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 1, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 0, hungertimer = 31, thirst = 0, thirsttimer = 31, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 0, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 138, thirst = 96, thirsttimer = 18, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-14 11:32]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET newbiemuted = 0, helpmuted = 0, admuted = 0, livemuted = 0, globalmuted = 0, reportmuted = 0, reportwarns = 0, fightstyle = 4, dirtycash = 0, toggletextdraws = 0, toggleooc = 0, togglephone = 0, toggleadmin = 0, togglehelper = 0, togglenewbie = 0, togglewt = 0, togglevip = 0, backpack = 0, flashlight = 0, chatanim = 0 WHERE uid = 0
+[!] Unknown column 'dirtycash' in 'field list'
+
+[2020-10-14 11:32]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET toggleradio = 0, togglemusic = 0, togglefaction = 0, togglenews = 0, toggleglobal = 1, togglecam = 0, togglehud = 1, pottime = 0, potgrams = 0, showturfs = 0, showlands = 0, watchon = 0, gpson = 0, pizzacooldown = 0, deathcooldown = 0, detectivecooldown = 0, duty = 0, bandana = 0 WHERE uid = 0
+[!] Unknown column 'pottime' in 'field list'
+
+[2020-10-14 11:32]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 0
+[!] Unknown column 'bpcash' in 'field list'
+
+[2020-10-14 11:32]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpweapon_0 = 0, bpweapon_1 = 0, bpweapon_2 = 0, bpweapon_3 = 0, bpweapon_4 = 0, bpweapon_5 = 0, bpweapon_6 = 0, bpweapon_7 = 0, bpweapon_8 = 0, bpweapon_9 = 0, bpweapon_10 = 0, bpweapon_11 = 0, bpweapon_12 = 0, bpweapon_13 = 0, bpweapon_14 = 0 WHERE uid = 0
+[!] Unknown column 'bpweapon_0' in 'field list'
+
+[2020-10-14 11:32]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 0, hungertimer = 75, thirst = 0, thirsttimer = 75, Lottery = 0, LotteryB = 0, comserv = 0 where uid = 0
+[!] Unknown column 'Lottery' in 'field list'
+
+[2020-10-15 07:40]
+Error ID: 1064
+Callback: 
+Query: INSERT INTO logs/password.log VALUES(null, NOW(), 'AdmCmd: Floyd_Natanauan\'s password was changed by Phillip_Mark.')
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/password.log VALUES(null, NOW(), 'AdmCmd: Floyd_Natanauan\'s password was chang' at line 1
+
+[2020-10-15 07:40]
+Error ID: 1054
+Callback: OnChangeUserPassword
+Query: UPDATE `accounts` SET `Key`='8321BA0599440B8524EA34D3B56176E8129B447FA059BDB26EB3DAE3FA5AF4FD6D42A0BA471B53A5F36DE8C9E30746BCAD6EA335D4AAFD87E99AA102CBF4ABDF' WHERE `Username`='Floyd_Natanauan' AND `AdminLevel` < 2
+[!] Unknown column 'Username' in 'where clause'
+
+[2020-10-16 10:45]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 569 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-10-16 16:12]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 573 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-10-17 00:47]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 569 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-10-17 00:49]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 569 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-10-17 01:44]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 569 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-10-17 04:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 570 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-10-17 04:45]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 73 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-10-17 10:36]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 602 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-10-18 01:53]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 569 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-01 16:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 572 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-01 16:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 572 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-01 17:20]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 568 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-02 08:59]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 559 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 09:13]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 575 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 13:43]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 594 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 13:43]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 594 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 13:55]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 589 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 13:55]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 589 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 15:33]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 594 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 15:58]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 568 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 18:56]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 613 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-03 20:06]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 598 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-04 08:01]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 559 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-04 08:05]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 559 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-04 15:17]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 558 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-04 18:38]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 589 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-04 20:42]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 643 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-04 20:45]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 603 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 00:15]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 643 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 09:27]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 568 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 09:46]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 578 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 09:47]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 604 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 10:02]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 663 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 10:54]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 604 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 12:06]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 603 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 14:10]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 558 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 15:18]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 602 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 17:09]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 635 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 18:11]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 663 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 18:21]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 558 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 19:20]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 589 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 19:30]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 589 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 19:30]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 589 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 19:47]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 589 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 20:43]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 663 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-05 21:04]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 559 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-06 08:55]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 35 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-06 12:26]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 568 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-06 13:37]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 663 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
+[2020-11-06 13:51]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Sork_Chigga (uid: 730) possibly teleport hacked (distance: 116.1)')
+[!] The table 'log_cheat' is full
+
+[2020-11-06 13:52]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Baldo_D._Sy (uid: 731) possibly teleport hacked (distance: 117.8)')
+[!] The table 'log_cheat' is full
+
+[2020-11-06 13:57]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Sike_Stussy (uid: 720) possibly teleport hacked (distance: 1386.3)')
+[!] The table 'log_cheat' is full
+
+[2020-11-06 14:00]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Rafael_EL_Chapo (uid: 732) possibly teleport hacked (distance: 118.1)')
+[!] The table 'log_cheat' is full
+
+[2020-11-06 14:02]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Aaron_blaster (uid: 681) possibly teleport hacked (distance: 300.0)')
+[!] The table 'log_cheat' is full
+
+[2020-11-06 14:10]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Franz_B._Gopio (uid: 556) gives a AK-47 to Rafael_EL_Chapo (uid: 732)')
+[!] The table 'log_admin' is full
+
+[2020-11-06 14:11]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Sike_Stussy (uid: 720) had a desynced Shotgun with 5 ammunition.')
+[!] The table 'log_cheat' is full
+
+[2020-11-06 14:11]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_cheat VALUES(null, NOW(), 'Sike_Stussy (uid: 720) had a desynced Shotgun with 5 ammunition.')
+[!] The table 'log_cheat' is full
+
+[2020-11-06 14:14]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Rence_Jimenez (uid: 673) changed Rence_Jimenez\'s (uid: 673) name to Bella_Poarch.')
+[!] The table 'log_admin' is full
+
+[2020-11-06 14:15]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_admin VALUES(null, NOW(), 'Franz_B._Gopio (uid: 556) set John_Makovsky\'s (uid: 698) weaponrestricted to 0')
+[!] The table 'log_admin' is full
+
+[2020-11-06 14:18]
+Error ID: 1114
+Callback: 
+Query: INSERT INTO log_admin VALUES([2020-11-06 21:41]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 603 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
+
