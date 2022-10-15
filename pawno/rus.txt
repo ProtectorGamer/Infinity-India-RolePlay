@@ -1,9 +1,9 @@
-D:\IIRP\gamemodes\main_2.pwn(7089) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
-D:\IIRP\gamemodes\main_2.pwn(13134) : ïðåäóïðåæäåíèå 213: íåñîâïàäåíèå òèïîâ
-D:\IIRP\gamemodes\main_2.pwn(23945) : íåïðàâèëüíàÿ òàáóëÿöèÿ
-D:\IIRP\gamemodes\main_2.pwn(93282) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
-D:\IIRP\gamemodes\main_2.pwn(98520) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
-D:\IIRP\gamemodes\main_2.pwn(114709) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(7070) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(13115) : ïðåäóïðåæäåíèå 213: íåñîâïàäåíèå òèïîâ
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(23926) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(93263) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(98501) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(114690) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2017, ITB CompuPhase
 
 
