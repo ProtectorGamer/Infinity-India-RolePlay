@@ -322,7 +322,7 @@ static const s_ValidDamageGiven[] = {
 	1, // 13 - Vibrator 2
 	1, // 14 - Flowers
 	1, // 15 - Cane
-	0, // 16 - Grenade
+	1, // 16 - Grenade
 	0, // 17 - Teargas
 	0, // 18 - Molotov
 	0, // 19 - Vehicle M4 (custom)
@@ -343,7 +343,7 @@ static const s_ValidDamageGiven[] = {
 	1, // 34 - Sniper
 	0, // 35 - Rocket launcher
 	0, // 36 - Heatseeker
-	0, // 37 - Flamethrower
+	1, // 37 - Flamethrower
 	1, // 38 - Minigun
 	0, // 39 - Satchel
 	0, // 40 - Detonator
@@ -395,7 +395,7 @@ static const s_ValidDamageTaken[] = {
 	1, // 34 - Sniper
 	0, // 35 - Rocket launcher
 	0, // 36 - Heatseeker
-	2, // 37 - Flamethrower
+	1, // 37 - Flamethrower
 	1, // 38 - Minigun
 	0, // 39 - Satchel
 	0, // 40 - Detonator
@@ -409,7 +409,7 @@ static const s_ValidDamageTaken[] = {
 	0, // 48 - Pistol whip (custom)
 	2, // 49 - Vehicle
 	2, // 50 - Helicopter blades
-	2, // 51 - Explosion
+	1, // 51 - Explosion
 	0, // 52 - Car park (custom)
 	2, // 53 - Drowning
 	2  // 54 - Splat
@@ -435,7 +435,7 @@ static Float:s_WeaponDamage[] = {
 	1.0, // 13 - Vibrator 2
 	1.0, // 14 - Flowers
 	1.0, // 15 - Cane
-	82.5, // 16 - Grenade
+	0.0, // 16 - Grenade
 	0.0, // 17 - Teargas
 	1.0, // 18 - Molotov
 	9.9, // 19 - Vehicle M4 (custom)
@@ -456,7 +456,7 @@ static Float:s_WeaponDamage[] = {
 	41.25, // 34 - Sniper
 	82.5, // 35 - Rocket launcher
 	82.5, // 36 - Heatseeker
-	1.0, // 37 - Flamethrower
+	0.0, // 37 - Flamethrower
 	46.2, // 38 - Minigun
 	82.5, // 39 - Satchel
 	0.0, // 40 - Detonator
@@ -470,7 +470,7 @@ static Float:s_WeaponDamage[] = {
 	2.64, // 48 - Pistol whip (custom)
 	9.9, // 49 - Vehicle
 	330.0, // 50 - Helicopter blades
-	82.5, // 51 - Explosion
+	0.0, // 51 - Explosion
 	1.0, // 52 - Car park (custom)
 	1.0, // 53 - Drowning
 	165.0  // 54 - Splat
@@ -518,7 +518,7 @@ static s_DamageType[] = {
 	1, // 34 - Sniper
 	0, // 35 - Rocket launcher
 	0, // 36 - Heatseeker
-	0, // 37 - Flamethrower
+	1, // 37 - Flamethrower
 	1, // 38 - Minigun
 	0, // 39 - Satchel
 	0, // 40 - Detonator
@@ -4371,7 +4371,7 @@ static ProcessDamage(&playerid, &issuerid, &Float:amount, &weaponid, &bodypart, 
 
 	if (weaponid == WEAPON_EXPLOSION) {
 		// Explosions do at most 82.5 damage. This will later be multipled by the damage value
-		amount /= 82.5;
+		amount /= 0;
 
 		// Figure out what caused the explosion
 		if (issuerid != INVALID_PLAYER_ID && s_LastExplosive[issuerid]) {
