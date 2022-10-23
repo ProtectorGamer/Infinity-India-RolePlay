@@ -92,11 +92,13 @@ static
 forward PlayerBar:CreatePlayerProgressBar(playerid, Float:x, Float:y, Float:width=55.5, Float:height=3.2, colour = 0xFF1C1CFF, Float:max=100.0, direction=BAR_DIRECTION_RIGHT);
 forward Float:GetPlayerProgressBarValue(playerid, PlayerBar:barid);
 
+
 /*==============================================================================
 
 	Utils
 
 ==============================================================================*/
+
 
 stock Float:_bar_percent(Float:x, Float:widthorheight, Float:max, Float:value, direction)
 {
@@ -203,12 +205,9 @@ stock DestroyPlayerProgressBar(playerid, PlayerBar:barid)
 
 stock ShowPlayerProgressBar(playerid, PlayerBar:barid)
 {
-	if(!IsPlayerConnected(playerid))
-		return 0;
 	if(!IsValidPlayerProgressBar(playerid, barid))
 		return 0;
-	if(!(PlayerBar:-1 < barid < PlayerBar:MAX_PLAYER_BARS))
-		return 0;
+
 	PlayerTextDrawShow(playerid, pbar_TextDraw[playerid][_:barid][pbar_back]);
 	PlayerTextDrawShow(playerid, pbar_TextDraw[playerid][_:barid][pbar_fill]);
 	PlayerTextDrawShow(playerid, pbar_TextDraw[playerid][_:barid][pbar_main]);
@@ -623,7 +622,3 @@ stock SetPlayerProgressBarDirection(playerid, PlayerBar:barid, direction)
 	return 1;
 }
 
-stock UpdatePlayerProgressBar(playerid, PlayerBar:barid)
-{
-	return ShowPlayerProgressBar(playerid, barid);
-}

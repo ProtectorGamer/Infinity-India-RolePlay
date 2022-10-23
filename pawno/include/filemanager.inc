@@ -96,6 +96,7 @@ native File:f_open(file[], mode[] = "r");
 	Description: Closes a file opened with f_open.
 	Params:
 			File:file - The handler of the file to be closed
+
 	Returns: True if success, false if not.
 */
 native f_close(File: file);
