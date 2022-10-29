@@ -322,7 +322,7 @@ static const s_ValidDamageGiven[] = {
 	1, // 13 - Vibrator 2
 	1, // 14 - Flowers
 	1, // 15 - Cane
-	1, // 16 - Grenade
+	0, // 16 - Grenade
 	0, // 17 - Teargas
 	0, // 18 - Molotov
 	0, // 19 - Vehicle M4 (custom)
@@ -343,7 +343,7 @@ static const s_ValidDamageGiven[] = {
 	1, // 34 - Sniper
 	0, // 35 - Rocket launcher
 	0, // 36 - Heatseeker
-	1, // 37 - Flamethrower
+	0, // 37 - Flamethrower
 	1, // 38 - Minigun
 	0, // 39 - Satchel
 	0, // 40 - Detonator
@@ -395,7 +395,7 @@ static const s_ValidDamageTaken[] = {
 	1, // 34 - Sniper
 	0, // 35 - Rocket launcher
 	0, // 36 - Heatseeker
-	1, // 37 - Flamethrower
+	2, // 37 - Flamethrower
 	1, // 38 - Minigun
 	0, // 39 - Satchel
 	0, // 40 - Detonator
@@ -409,7 +409,7 @@ static const s_ValidDamageTaken[] = {
 	0, // 48 - Pistol whip (custom)
 	2, // 49 - Vehicle
 	2, // 50 - Helicopter blades
-	1, // 51 - Explosion
+	2, // 51 - Explosion
 	0, // 52 - Car park (custom)
 	2, // 53 - Drowning
 	2  // 54 - Splat
@@ -435,7 +435,7 @@ static Float:s_WeaponDamage[] = {
 	1.0, // 13 - Vibrator 2
 	1.0, // 14 - Flowers
 	1.0, // 15 - Cane
-	0.0, // 16 - Grenade
+	82.5, // 16 - Grenade
 	0.0, // 17 - Teargas
 	1.0, // 18 - Molotov
 	9.9, // 19 - Vehicle M4 (custom)
@@ -456,7 +456,7 @@ static Float:s_WeaponDamage[] = {
 	41.25, // 34 - Sniper
 	82.5, // 35 - Rocket launcher
 	82.5, // 36 - Heatseeker
-	0.0, // 37 - Flamethrower
+	1.0, // 37 - Flamethrower
 	46.2, // 38 - Minigun
 	82.5, // 39 - Satchel
 	0.0, // 40 - Detonator
@@ -470,7 +470,7 @@ static Float:s_WeaponDamage[] = {
 	2.64, // 48 - Pistol whip (custom)
 	9.9, // 49 - Vehicle
 	330.0, // 50 - Helicopter blades
-	0.0, // 51 - Explosion
+	82.5, // 51 - Explosion
 	1.0, // 52 - Car park (custom)
 	1.0, // 53 - Drowning
 	165.0  // 54 - Splat
@@ -518,7 +518,7 @@ static s_DamageType[] = {
 	1, // 34 - Sniper
 	0, // 35 - Rocket launcher
 	0, // 36 - Heatseeker
-	1, // 37 - Flamethrower
+	0, // 37 - Flamethrower
 	1, // 38 - Minigun
 	0, // 39 - Satchel
 	0, // 40 - Detonator
@@ -2135,8 +2135,8 @@ public OnPlayerConnect(playerid)
 	}
 
 	SetPlayerTeam(playerid, 0xFE);
-	FreezeSyncData(playerid, false);
-	SetFakeFacingAngle(playerid, _);
+	//FreezeSyncData(playerid, false);
+	//SetFakeFacingAngle(playerid, _);
 	DamageFeedUpdate(playerid);
 
 	#if WC_CUSTOM_VENDING_MACHINES
@@ -2334,8 +2334,8 @@ public OnPlayerSpawn(playerid)
 
 	UpdatePlayerVirtualWorld(playerid);
 	UpdateHealthBar(playerid, true);
-	FreezeSyncData(playerid, false);
-	SetFakeFacingAngle(playerid, _);
+	//FreezeSyncData(playerid, false);
+	//SetFakeFacingAngle(playerid, _);
 	DamageFeedUpdate(playerid);
 
 	if (GetPlayerTeam(playerid) != 0xFE) {
@@ -2406,7 +2406,7 @@ public OnPlayerRequestClass(playerid, classid)
 		s_IsDying[playerid] = false;
 	}
 
-	FreezeSyncData(playerid, false);
+	//FreezeSyncData(playerid, false);
 	UpdatePlayerVirtualWorld(playerid);
 
 	if (s_TrueDeath[playerid]) {
@@ -2595,7 +2595,7 @@ static Float:AngleBetweenPoints(Float:x1, Float:y1, Float:x2, Float:y2);
 
 forward WC_CbugPunishment(playerid, weapon);
 public WC_CbugPunishment(playerid, weapon) {
-	FreezeSyncData(playerid, false);
+	//FreezeSyncData(playerid, false);
 	ClearAnimations(playerid, 1);
 	GivePlayerWeapon(playerid, weapon, 0);
 }
@@ -2624,7 +2624,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 				ClearAnimations(playerid, 1);
 				ApplyAnimation(playerid, "PED", "IDLE_stance", 4.1, 1, 0, 0, 0, 0, 1);
-				FreezeSyncData(playerid, true);
+				//FreezeSyncData(playerid, true);
 				GivePlayerWeapon(playerid, w, 0);
 				SetTimerEx("WC_CbugPunishment", 600, false, "ii", playerid, GetPlayerWeapon(playerid));
 
@@ -2650,8 +2650,8 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 								KillTimer(s_DelayedDeathTimer[i]);
 								s_DelayedDeathTimer[i] = -1;
 								ClearAnimations(i, 1);
-								SetFakeFacingAngle(i, _);
-								FreezeSyncData(i, false);
+								//SetFakeFacingAngle(i, _);
+								//FreezeSyncData(i, false);
 
 								s_IsDying[i] = false;
 
@@ -2746,7 +2746,7 @@ public OnPlayerStreamIn(playerid, forplayerid)
 {
 	// Send ped floor_hit_f
 	if (s_IsDying[playerid]) {
-		SendLastSyncData(playerid, forplayerid, 0x2e040000 + 1150);
+		//SendLastSyncData(playerid, forplayerid, 0x2e040000 + 1150);
 	}
 
 	#if defined WC_OnPlayerStreamIn
@@ -2813,8 +2813,8 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 			if (vx*vx + vy*vy + vz*vz <= 0.05) {
 				for (new i = 0; i < MAX_PLAYERS; i++) {
 					if (i != playerid && IsPlayerConnected(i) && IsPlayerStreamedIn(playerid, i)) {
-						SendLastSyncData(playerid, i);
-						ClearAnimationsForPlayer(playerid, i);
+						//SendLastSyncData(playerid, i);
+					//	ClearAnimationsForPlayer(playerid, i);
 					}
 				}
 			}
@@ -3772,13 +3772,13 @@ static ScriptInit()
 {
 	s_LagCompMode = GetServerVarAsInt("lagcompmode");
 
-	if (s_LagCompMode) {
-		SetKnifeSync(false);
+/*	if (s_LagCompMode) {
+	//	SetKnifeSync(false);
 	} else {
 		s_DamageTakenSound = 0;
 		SetKnifeSync(true);
 	}
-
+*/
 	for (new i = 0; i < sizeof(s_ClassSpawnInfo); i++) {
 		s_ClassSpawnInfo[i][e_Skin] = -1;
 	}
@@ -3883,7 +3883,7 @@ static ScriptInit()
 
 static ScriptExit()
 {
-	SetKnifeSync(true);
+//	SetKnifeSync(true);
 
 	#if WC_CUSTOM_VENDING_MACHINES
 		DestroyVendingMachines();
@@ -3915,10 +3915,10 @@ static ScriptExit()
 			SetPlayerArmour(playerid, s_PlayerArmour[playerid]);
 		}
 
-		SetFakeHealth(playerid, 255);
-		SetFakeArmour(playerid, 255);
-		FreezeSyncData(playerid, false);
-		SetFakeFacingAngle(playerid, _);
+		//SetFakeHealth(playerid, 255);
+	//	SetFakeArmour(playerid, 255);
+		//FreezeSyncData(playerid, false);
+		//SetFakeFacingAngle(playerid, _);
 		SetHealthBarVisible(playerid, false);
 
 		if (s_HealthBarForeground[playerid] != PlayerText:INVALID_TEXT_DRAW) {
@@ -4009,8 +4009,8 @@ static UpdateHealthBar(playerid, bool:force = false)
 		return;
 	}
 
-	SetFakeHealth(playerid, health);
-	SetFakeArmour(playerid, armour);
+//	SetFakeHealth(playerid, health);
+//	SetFakeArmour(playerid, armour);
 
 	UpdateSyncData(playerid);
 
@@ -4130,7 +4130,7 @@ static UpdateSyncData(playerid)
 
 	for (new i = 0; i < MAX_PLAYERS; i++) {
 		if (i != playerid && IsPlayerConnected(i) && IsPlayerStreamedIn(playerid, i)) {
-			SendLastSyncData(playerid, i);
+			//SendLastSyncData(playerid, i);
 		}
 	}
 }
@@ -4241,12 +4241,12 @@ public WC_SpawnForStreamedIn(playerid)
 		return;
 	}
 
-	SpawnPlayerForWorld(playerid);
+	//spawnplayerforworld(playerid);
 
 	for (new i = 0; i < MAX_PLAYERS; i++) {
 		if (i != playerid && IsPlayerConnected(i) && IsPlayerStreamedIn(playerid, i)) {
-			SendLastSyncData(playerid, i);
-			ClearAnimationsForPlayer(playerid, i);
+			//SendLastSyncData(playerid, i);
+			//ClearAnimationsForPlayer(playerid, i);
 		}
 	}
 }
@@ -4371,7 +4371,7 @@ static ProcessDamage(&playerid, &issuerid, &Float:amount, &weaponid, &bodypart, 
 
 	if (weaponid == WEAPON_EXPLOSION) {
 		// Explosions do at most 82.5 damage. This will later be multipled by the damage value
-		amount /= 0;
+		amount /= 82.5;
 
 		// Figure out what caused the explosion
 		if (issuerid != INVALID_PLAYER_ID && s_LastExplosive[issuerid]) {
@@ -4797,7 +4797,7 @@ static PlayerDeath(playerid, animlib[32], animname[32], anim_lock = 0, respawn_t
 	OnPlayerPrepareDeath(playerid, animlib, animname, anim_lock, respawn_time);
 
 	UpdateHealthBar(playerid);
-	FreezeSyncData(playerid, freeze_sync);
+	//FreezeSyncData(playerid, freeze_sync);
 
 	if (respawn_time == -1) {
 		respawn_time = s_RespawnTime;
@@ -5269,7 +5269,7 @@ static MakePlayerFacePlayer(playerid, targetid, opposite = false, forcesync = tr
 	SetPlayerFacingAngle(playerid, angle);
 
 	if (forcesync) {
-		SetFakeFacingAngle(playerid, angle);
+		//SetFakeFacingAngle(playerid, angle);
 		UpdateSyncData(playerid);
 	}
 }
@@ -5352,8 +5352,8 @@ public WC_PlayerDeathRespawn(playerid)
 
 	if (!OnPlayerDeathFinished(playerid, true)) {
 		UpdateHealthBar(playerid);
-		SetFakeFacingAngle(playerid, _);
-		FreezeSyncData(playerid, false);
+		//SetFakeFacingAngle(playerid, _);
+		//FreezeSyncData(playerid, false);
 
 		return;
 	}
@@ -5368,7 +5368,7 @@ public WC_PlayerDeathRespawn(playerid)
 	}
 
 	SetPlayerVirtualWorld(playerid, WC_DEATH_WORLD);
-	SetFakeFacingAngle(playerid, _);
+	//SetFakeFacingAngle(playerid, _);
 	TogglePlayerSpectating(playerid, true);
 	TogglePlayerSpectating(playerid, false);
 }

@@ -1,4 +1,4 @@
-/**--------------------------------------------------------------------------**\
+/*----------------------------------------------------------------------------*\
 					==========================
 					 y_colours - X11 colours!
 					==========================
@@ -58,8 +58,7 @@ Changelog:
 		Added colourspace resolution for converting {FF0000} to ~r~.
 	25/11/10:
 		First version.
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 #include <a_samp>
 #include "..\y_debug"
@@ -175,17 +174,17 @@ enum e_COMPRESS_FORMAT_DATA (+= 0x10000000)
 
 #define Y_FORMAT_STRING_SKIP(); //if(iOut+1<len)output[iOut]=0,lastChar=iOut++
 
-/**--------------------------------------------------------------------------**\
-<summary>Format_GetKeys</summary>
-<param name="const input[]">String to read from.</param>
-<param name="&idx">Current read index.</param>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Format_GetKeys
+Params:
+	const input[] - String to read from.
+	&idx - Current read index.
+Return:
 	e_GAME_TEXT_KEYS - Enum representation of keys.
-</returns>
-<remarks>
+Notes:
 	Reads a GameText key identifier and compresses it essentially.
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 stock e_GAME_TEXT_KEYS:Format_GetKeys(const input[], &idx)
 {
@@ -360,16 +359,17 @@ stock e_GAME_TEXT_KEYS:Format_GetKeys(const input[], &idx)
 	return e_NO_KEY_SELECTED;
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>Format_Standardise</summary>
-<param name="input[]">The text to read in.</param>
-<param name="output[]">The destination array.  Can be the same as "input".</param>
-<param name="len">The length of the output array.</param>
-<param name="pt - Special mode for parsing player text">has "()" but no "%" or keys.</param>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Format_Standardise
+Params:
+	input[] - The text to read in.
+	output[] - The destination array.  Can be the same as "input".
+	len - The length of the output array.
+	pt - Special mode for parsing player text - has "()" but no "%" or keys.
+Return:
 	The length of the string.
-</returns>
-<remarks>
+Notes:
 	Takes a string input and converts it to a standardised representation, i.e.
 	uses byte-codes instead of human readable codes to represent formats and
 	colours.  This makes it faster to format in to any other representation,
@@ -378,8 +378,7 @@ stock e_GAME_TEXT_KEYS:Format_GetKeys(const input[], &idx)
 	the different representations) to a single fast read format and then have
 	fairly simple to write methods to convert that single format to any other
 	format (see y_formatout.inc).
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 stock Format_Standardise(input[], output[], len = sizeof (output), pt = false)
 {
@@ -1037,18 +1036,18 @@ Format_Standardise_no_switch:
 	return iOut;
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>Format_GetSpecifier</summary>
-<param name="input[]">String to read from.</param>
-<param name="&iIn">Index to read from.</param>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Format_GetSpecifier
+Params:
+	input[] - String to read from.
+	&iIn - Index to read from.
+Return:
 	Single cell representation of the current specifier.
-</returns>
-<remarks>
+Notes:
 	Reads a series of characters from the input string and interprets them as a
 	format specifier (e.g. "%d").  Also returns the new current string index.
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 static stock Format_GetSpecifier(input[], &iIn)
 {
@@ -1161,17 +1160,17 @@ static stock Format_GetSpecifier(input[], &iIn)
 	return 0;
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>Format_GTToSAMP</summary>
-<param name="const str[]">Input.</param>
-<param name="&idx">Read index.</param>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Format_GTToSAMP
+Params:
+	const str[] - Input.
+	&idx - Read index.
+Return:
 	Colour.
-</returns>
-<remarks>
+Notes:
 	Reads a GameText colour format and converts it to single-cell RGB.
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 static stock Format_GTToSAMP(const str[], &idx)
 {

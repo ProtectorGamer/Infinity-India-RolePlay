@@ -1,4 +1,4 @@
-/**--------------------------------------------------------------------------**\
+/*----------------------------------------------------------------------------*\
 					=========================================
 					 y_incognitostream - y_groups + streamer 
 					=========================================
@@ -37,7 +37,6 @@ Legal:
 		yom - French translation.
 		50p - Polish translation.
 		Zamaroht - Spanish translation.
-		Los - Portuguese translation.
 		Dracoblue, sintax, mabako, Xtreme, other coders - Producing other modes
 			for me to strive to better.
 		Pixels^ - Running XScripters where the idea was born.
@@ -47,11 +46,6 @@ Legal:
 		Thiadmer - PAWN, whose limits continue to amaze me!
 		Kye/Kalcor - SA:MP.
 		SA:MP Team past, present and future - SA:MP.
-	
-	Optional plugins:
-		Gamer_Z - GPS.
-		Incognito - Streamer.
-		Me - sscanf2, fixes2, Whirlpool.
 	
 Version:
 	0.1
@@ -92,7 +86,7 @@ Compile options:
 	-
 Operators:
 	-
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 #include "y_plugins"
 
@@ -108,19 +102,19 @@ static stock const
 	#include "y_groupsingle"
 	#include "y_groupsecond"
 	
-	/**----------------------------------------------------------------------**\
-	<summary>SObject_SetPlayer</summary>
-	<param name="	o">Object to set.</param>
-	<param name="	p">Player to set.</param>
-	<param name="	bool:s">Add or remove this object from this player.</param>
-	<returns>
+	/*------------------------------------------------------------------------*\
+	Function:
+		SObject_SetPlayer
+	Params:
+		o - Object to set.
+		p - Player to set.
+		bool:s - Add or remove this object from this player.
+	Return:
 		-
-	</returns>
-	<remarks>
+	Notes:
 		Translate the YSI permissions system to the streamer plugin permissions
 		system.
-	</remarks>
-	\**----------------------------------------------------------------------**/
+	\*------------------------------------------------------------------------*/
 	
 	foreign void:SObject_SetPlayer(o,p,bool:s);
 	
@@ -131,17 +125,18 @@ static stock const
 		//return s;
 	}
 	
-	/**----------------------------------------------------------------------**\
-	<summary>IPS_CreateDynamicObject</summary>
-	<returns>
+	/*------------------------------------------------------------------------*\
+	Function:
+		IPS_CreateDynamicObject
+	Params:
 		-
-	</returns>
-	<remarks>
+	Return:
+		-
+	Notes:
 		Hook the streamer creation function so that we can initialise the groups
 		system for this thing.  The remainder of this file is just these two
 		functions in various forms repeatedly.
-	</remarks>
-	\**----------------------------------------------------------------------**/
+	\*------------------------------------------------------------------------*/
 	
 	stock IPS_CreateDynamicObject(modelid, Float:x, Float:y, Float:z, Float:rx, Float:ry, Float:rz, worldid = -1, interiorid = -1, playerid = -1, Float:streamdistance = 100.0)
 	{

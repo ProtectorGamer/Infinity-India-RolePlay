@@ -1,4 +1,4 @@
-/**--------------------------------------------------------------------------**\
+/*----------------------------------------------------------------------------*\
 					=================================
 					 y_textrender - Show text.
 					=================================
@@ -60,8 +60,7 @@ Functions:
 Variables:
 	Global:
 		-
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 #include "..\y_utils"
 #include "..\y_colours"
@@ -123,7 +122,6 @@ Variables:
 #define e_FORMAT_FLAGS_NONE  (0x04000000)
 
 static stock
-	YSI_g_sListSep[4] = ", ",
 	YSI_g_sFadeRedoTarget,
 	YSI_g_sFadeLength,
 	YSI_g_sFadeColour,
@@ -140,11 +138,6 @@ stock _Text_SetDialogMode()
 	YSI_g_sTempStyle[E_STYLE_DATA_TYPE] = e_STYLE_TYPE_DIALOG;
 	state y_render_show : y_render_show_scm;
 	YSI_g_sJustOne = true;
-}
-
-stock Format_SetListSeparator(string:lst[])
-{
-	strcpy(YSI_g_sListSep, lst);
 }
 
 stock _Format_SetStyleData(master, index, style[E_STYLE_DATA], label[E_3D_DATA])
@@ -611,18 +604,19 @@ static stock Format_DoEndFade(output[], &start, end, &rem, colour, &initial) //<
 	return 0;
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>Format_DoAddString</summary>
-<param name="out[]">The destination string.</param>
-<param name="in[]">The data to add.</param>
-<param name="&oidx">The index in "out" at which to add data.</param>
-<param name="len">The length of "in".</param>
-<param name="&orem">Space remaining in "out".</param>
-<param name="&fakePos">Like "oidx", but cumulative over line breaks.</param>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Format_DoAddString
+Params:
+	out[] - The destination string.
+	in[] - The data to add.
+	&oidx - The index in "out" at which to add data.
+	len - The length of "in".
+	&orem - Space remaining in "out".
+	&fakePos - Like "oidx", but cumulative over line breaks.
+Return:
 	The amount of data from "in" not added to "out".
-</returns>
-<remarks>
+Notes:
 	Takes an input string and adds it to an output string.  If the input string
 	is too long to fit in the remainder of the output string, what has been
 	added already (including part of the input string) is displayed and a new
@@ -632,8 +626,7 @@ static stock Format_DoEndFade(output[], &start, end, &rem, colour, &initial) //<
 	the right colour.  This will also require a method of winding back the state
 	to the point just after the initial input string was added to continue on to
 	show the next string including newly determined fade data.
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 static stock Format_DoAddString(out[], const in[], &oidx, const len, &orem, &fakepos) <y_render_fade : y_render_fade_fake>
 {
@@ -786,17 +779,17 @@ static stock Format_DoDisplay(playerid, colour, out[]) <y_render_show : y_render
 	//out[0] = '\0';
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>Format_JustShow</summary>
-<param name="playerid">Player to show the text to.</param>
-<param name="out[]">What the text to show is.</param>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Format_JustShow
+Params:
+	playerid - Player to show the text to.
+	out[] - What the text to show is.
+Return:
 	-
-</returns>
-<remarks>
+Notes:
 	-
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 stock Format_JustShow(playerid, out[]) <y_render_show : y_render_show_scm>
 {
@@ -818,18 +811,19 @@ stock Format_JustShow(playerid, out[]) <y_render_show : y_render_show_td>
 	TD_ShowForPlayer(playerid, Text:out[0]);
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>Text_GetLastID</summary>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Text_GetLastID
+Params:
+	-
+Return:
 	The basic ID linking all displayed elements together where appropriate (for
 	example SendClientMessage has no meaningful ID.  3D texts would, but that's
 	not implemented.  So do game texts, but that's not implemented either, so
 	really it's just text draws.
-</returns>
-<remarks>
+Notes:
 	-
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 stock Text_GetLastID() <y_render_show : y_render_show_td>
 {
@@ -841,15 +835,16 @@ stock Text_GetLastID() <>
 	return -1;
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>-</summary>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
 	-
-</returns>
-<remarks>
+Params:
 	-
-</remarks>
-\**--------------------------------------------------------------------------**/
+Return:
+	-
+Notes:
+	-
+\*----------------------------------------------------------------------------*/
 
 // Generic function to handle rendering for all types of outputs.  Other
 // functions such as Format_AddColour are specialised for different text styles.
@@ -1147,9 +1142,8 @@ Format_Render_start:
 										{
 											// Separate the strings - hard coded
 											// list format currently I'm afraid.
-											//ts = ", ";
-											//Y_RENDER_ADD(ts)
-											Y_RENDER_ADD(YSI_g_sListSep)
+											ts = ", ";
+											Y_RENDER_ADD(ts)
 										}
 										format(ts, sizeof (ts), scSpecifier, width, prec, Q@);
 										Y_RENDER_ADD(ts)
@@ -1168,7 +1162,7 @@ Format_Render_start:
 								// Normal version.  This is ended by a null.
 								// Other functions get the count in advance when
 								// an index of -1 is passed.
-								//func[2] = 'r';
+								func[2] = 'r';
 								// This code mimicks much of the internal
 								// y_master code because wrapping this in a
 								// macro is a) pointless and b) hard.  This code
@@ -1190,9 +1184,8 @@ Format_Render_start:
 										{
 											// Separate the strings - hard coded
 											// list format currently I'm afraid.
-											//ts = ", ";
-											//Y_RENDER_ADD(ts)
-											Y_RENDER_ADD(YSI_g_sListSep)
+											ts = ", ";
+											Y_RENDER_ADD(ts)
 										}
 										// Could do with configuring this to not
 										// need to call "Y_RENDER_SPECIFIER" every

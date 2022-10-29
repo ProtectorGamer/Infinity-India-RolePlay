@@ -1,4 +1,4 @@
-/**--------------------------------------------------------------------------**\
+/*----------------------------------------------------------------------------*\
                               ====================
                                YSI - Master Funcs
                               ====================
@@ -92,17 +92,7 @@ Natives:
 	V@ - Renaming of getproperty for size reasons.
 	S@ - Renaming of setproperty for size reasons.
 	P@ - Renaming of __CallLocalFunction for size reasons.
-</remarks>
-\**--------------------------------------------------------------------------**/
-
-// Used to get rid of the "string:" tag once it has been used.
-#if !defined string
-	#define string:
-#endif
-
-#if !defined void
-	#define void:
-#endif
+\*----------------------------------------------------------------------------*/
 
 #include "..\y_utils"
 #include "y_globaltags"
@@ -240,4 +230,13 @@ stock F@()
 			y_lock 1;
 		}
 	}
+#endif
+
+// Used to get rid of the "string:" tag once it has been used.
+#if !defined string
+	#define string:
+#endif
+
+#if !defined void
+	#define void:
 #endif

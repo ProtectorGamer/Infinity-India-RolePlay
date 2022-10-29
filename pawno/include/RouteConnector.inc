@@ -16,7 +16,7 @@
 	#endinput
 #endif
 
-#define MAX_ROUTE_NODES				(32768)
+#define MAX_NODES					(32768)
 #define MAX_CONNECTIONS				(5)
 
 #define CONNECT_TYPE_BOTH			(0)
@@ -29,12 +29,12 @@
 
 native AddNode(Float:X,Float:Y,Float:Z,AddToPathFinder = 0, AddToScanner = 0);
 /*
-	Function:
+	Function: 
 		AddNode
-	Description:
+	Description: 
 		Adds a node into the memory of the plugin,
 		This node will be unavailable in route calculations.
-	Parameters:
+	Parameters: 
 		Position as X Y Z
 		AddToPathFinder - if set to 1 it will also make sure the graph will be updated so when searching for a route it will be added to the list.
 		AddToScanner - If set to 1 the node will be available in OnPlayerClosestNodeIDChange, else not.
@@ -44,12 +44,12 @@ native AddNode(Float:X,Float:Y,Float:Z,AddToPathFinder = 0, AddToScanner = 0);
 */
 native AddNodeEx(ID,Float:X,Float:Y,Float:Z,AddToPathFinder = 0);
 /*
-	Function:
+	Function: 
 		AddNodeEx
-	Description:
+	Description: 
 		The only difference with AddNode is that you can specify your own NodeID here AND the node will be automaticly added to the appropriate area.
 		Gaps may be present (eg AddNodeEx(0,0.0,0.0,0.0,0),AddNodeEx(6,0.0,0.0,0.0,0);).
-	Parameters:
+	Parameters: 
 		ID as Custom NodeID
 		Position as X Y Z
 		AddToPathFinder - if set to 1 it will also make sure the graph will be updated so when searching for a route it will be added to the list.
@@ -59,12 +59,12 @@ native AddNodeEx(ID,Float:X,Float:Y,Float:Z,AddToPathFinder = 0);
 */
 native ConnectNodes(NodeID_one,NodeID_two,AddToPathFinder = 0,direction = 0);
 /*
-	Function:
+	Function: 
 		ConnectNodes
-	Description:
+	Description: 
 		This will connect two nodes stored in memory, same rules as for AddNode(Ex), it won't be available in path calculations.
 		When you connect NodeID_one with NodeID_two it will automaticly connect the opposite, no distance suplying is needed as the XYZ are supplied at node creation.
-	Parameters:
+	Parameters: 
 		NodeID_one and NodeID_two as NodeID's
 		AddToPathFinder - if set to 1 it will also make sure the graph will be updated so when searching for a route it will be added to the list.
 		direction - you can choose to only connect nodeID one with nodeID two (One_To_Two = 1) or to connect them together (BOTH = 0)
@@ -83,11 +83,11 @@ native ConnectNodes(NodeID_one,NodeID_two,AddToPathFinder = 0,direction = 0);
 */
 native NearestPlayerNode(playerid,Float:MaxDist=9999.99,IgnoreNodeID=(-1),UseAreas = 0);
 /*
-	Function:
+	Function: 
 		NearestPlayerNode
-	Description:
+	Description: 
 		This function will get the closest player node, if you used AddNode(Ex) this nodes will also be considered.
-	Parameters:
+	Parameters: 
 		playerid - the playerid to count from
 		MaxDist - the maximal distance to search from the player
 		IgnoreNodeID - this node ID will not be returned as the closest one, it will be ignored in the search.
@@ -96,11 +96,11 @@ native NearestPlayerNode(playerid,Float:MaxDist=9999.99,IgnoreNodeID=(-1),UseAre
 */
 native NearestNodeFromPoint(Float:X,Float:Y,Float:Z,Float:MaxDist=9999.99,IgnoreNodeID=(-1),UseAreas = 0);
 /*
-	Function:
+	Function: 
 		NearestNodeFromPoint
-	Description:
+	Description: 
 		Same as NearestPlayerNode, but here you can supply an point instead of an playerid
-	Parameters:
+	Parameters: 
 		XYZ - the position of the point to search from
 		MaxDist - the maximal distance to search from the player
 		IgnoreNodeID - this node ID will not be returned as the closest one, it will be ignored in the search.
@@ -109,12 +109,12 @@ native NearestNodeFromPoint(Float:X,Float:Y,Float:Z,Float:MaxDist=9999.99,Ignore
 */
 native WriteNodesToFile(filename[]);
 /*
-	Function:
+	Function: 
 		WriteNodesToFile
-	Description:
+	Description: 
 		Write all nodes, connections, contents of the memory into an loadable file,
 		can be used by ReadNodesFromFile later.
-	Parameters:
+	Parameters: 
 		filename -	the "path/filename.extension" to store the information in,
 					note that if you want to make a file in the scriptfiles folder you need to supply:
 					WriteNodesToFile("scriptfiles/your.file.name");
@@ -122,13 +122,13 @@ native WriteNodesToFile(filename[]);
 */
 native ReadNodesFromFile(filename[]);
 /*
-	Function:
+	Function: 
 		ReadNodesFromFile
-	Description:
+	Description: 
 		Read all nodes, connections, contents of the file into the memory,
 		This function will automaticly create nodes, connect them, create the virtual graph to search paths on
 		after it has been loaded into the memory.
-	Parameters:
+	Parameters: 
 		filename -	the "path/filename.extension" to read the information from,
 					note that if you want to read a file in the scriptfiles folder you need to supply:
 					ReadNodesFromFile("scriptfiles/your.file.name");
@@ -140,34 +140,34 @@ native ReadNodesFromFile(filename[]);
 */
 native GetNodePos(NodeID,&Float:X,&Float:Y,&Float:Z);
 /*
-	Function:
+	Function: 
 		GetNodePos
-	Description:
+	Description: 
 		Get the XYZ position of the supplied NodeID
-	Parameters:
+	Parameters: 
 		NodeID - The NodeID to get the XYZ from
 		(returns) X Y Z - The XYZ positions.
 	Returns 0 on failure (Out Of Range?), -1 if node doesn't exist, 1 on success.
 */
 native CalculatePath(Start,End,routeID = 0,bool:CreatePolygon=false,Float:PolygonWidth=7.5,bool:GrabNodePositions=false);//Threaded calculating, everything done here will be added to an Queue
 /*
-	Function:
+	Function: 
 		CalculatePath
-	Description:
+	Description: 
 		Submits information to the plugins' queue to calculate a path between the desired points
-	Parameters:
+	Parameters: 
 		Start - The start NodeID
 		End - the destination NodeID
-		routeID (optional) - [custom integer supply] Here you can specify an integer value that will be passed
+		routeID (optional) - [custom integer supply] Here you can specify an integer value that will be passed 
 		to the callback, along with the calculated path information, for example the PlayerID.
 		182:
 		CreatePolygon - creates a polygon around the path if set to true
 		PolygonWidth - the width from the node lines to the edge of the polygon
 		183:
 		GrabNodePositions - makes sure the NodePos[][] array is filled with usefull information.
-
+		
 		Please note that this can increase the needed stack size extremely.
-		For storing the nodes, a polygon and all positions you need:
+		For storing the nodes, a polygon and all positions you need: 
 		amount_of_nodes*4096*8+4096 bytes. The max amount of nodes I ever calculated wasn't higher than 1000. so:
 		3280896 bytes would be needed for the stack. Make sure to use
 		#pragma dynamic 4194304 //2^21 < 32772096 < 2^22, so we choose 2^22 bytes, this is 4MB of memory, so look out!
@@ -179,52 +179,52 @@ native CalculatePath(Start,End,routeID = 0,bool:CreatePolygon=false,Float:Polygo
 		This function is Threaded, this means that if the CalculatePath search takes 3 seconds, it won't lagg your server.
 		Your server will continue to work normally.
 
-		Only the callback in the script which calls the plugin will get executed with this, if you do CalculatePath in Script1,
+		Only the callback in the script which calls the plugin will get executed with this, if you do CalculatePath in Script1, 
 		and have your callback in Script2 then it won't get executed, however if you need that, make in script1 CallRemoteFunction in the callback to call the other script.
 
 		Returns 1 on success, 0 when fails.
 */
 native IsNodeIntersection(NodeID);
 /*
-	Function:
+	Function: 
 		IsNodeIntersection
-	Description:
+	Description: 
 		Check if a node has 3 or more connections
-	Parameters:
+	Parameters: 
 		NodeID - The ID of the node
 	Return 1 if true, 0 if false, -1 if node doesn't exist.
 */
 native Float:GetAngleBetweenNodes(NodeID_one,NodeID_middle_aka_two,NodeID_three);
 /*
-	Function:
+	Function: 
 		GetAngleBetweenNodes (Returns Float)
-	Description:
+	Description: 
 		Gets the angle between 3 nodes (2 connections/lines).
-	Parameters:
+	Parameters: 
 		NodeID* - The ID of the node
 	Return 0.0 if one of the three nodes doesn't exist
 */
 native GetConnectedNodes(NodeID);
 /*
-	Function:
+	Function: 
 		GetConnectedNodes
-	Description:
+	Description: 
 		returns the amount of other nodes that are connected to this node, max is 5
-	Parameters:
+	Parameters: 
 		NodeID* - The ID of the node
 	Returns amount of nodes connected (0 to 5), on failure -1.
 */
 native GetNextEmptyNodeID();
 /*
-	Function:
+	Function: 
 		GetNextEmptyNodeID
-	Description:
+	Description: 
 		returns the closest empty node ID (closest starting from 0 to up);
 	Note:
-		Example:
+		Example: 
 
 				 new id = GetNextEmptyNodeID();
-				 if(id != -1)AddNodeEx(id,X,Y,Z);
+				 if(id != -1)AddNodeEx(id,X,Y,Z); 
 
 				 However this example results in:
 
@@ -233,119 +233,119 @@ native GetNextEmptyNodeID();
 */
 native GetQueueSize();
 /*
-	Function:
+	Function: 
 		GetQueueSize
-	Description:
+	Description: 
 		gets the size of all queued path calculations to do.
-	Update R184: Returns amount of calculations pending
+	Update R184: Returns amount of calculations pending 
 */
 native GetConnectedNodeID(NodeID,ConnectID);
 /*
-	Function:
+	Function: 
 		GetConnectedNodeID
-	Description:
+	Description: 
 		gets the ID of an connection to NodeID, -1 if ConnectID has no connection, connectid must be between 0 and (MAX_CONNECTIONS-1), however there is OFB prevention check.
 */
 native Float:GetConnectedNodeDistance(NodeID,ConnectID);
 /*
-	Function:
+	Function: 
 		GetConnectedNodeDistance (Returns Float)
-	Description:
+	Description: 
 		gets the distance to a connected node (ConnectID) from the selected node (NodeID).
 */
 native Float:GetDistanceBetweenNodes(NodeID_one,NodeID_two);
 /*
-	Function:
+	Function: 
 		GetDistanceBetweenNodes (Returns Float)
-	Description:
+	Description: 
 		gets the distance between the two nodes (NOT VIA OTHER NODES, THIS JUST DOES THE X Y Z POSITION CALCULATION).
 */
 native IsNodeInPathFinder(NodeID);
 /*
-	Function:
+	Function: 
 		IsNodeInPathFinder
-	Description:
+	Description: 
 		Checks if NodeID is added to the routecalculator.
 	Returns -1 if the NodeID is invalid and 0 if node is not in the route calculator, 1 if yes.
 */
 native GetRouteArray(ID,destination[],size = sizeof(destination));
 /*
-	Function:
+	Function: 
 		GetRouteArray
-	Description:
+	Description: 
 		Stores an saved array with assigned ID to destination[]
 	Returns the amount of nodes in array at ID, Returns 0 if array is empty or ID doesn't exist.
 */
 native GetRouteAtPos(ID,Array_Pos,&amount_of_nodes=0);
 /*
-	Function:
+	Function: 
 		GetRouteAtPos
-	Description:
+	Description: 
 		Returns the NodeID in array[Array_Pos] at ID.
 		Optionally you can specify an variable to store the amount of nodes in it.
 */
 native StoreRouteArray(amount_of_nodes,array[]);
 /*
-	Function:
+	Function: 
 		StoreRouteArray
-	Description:
-		Stores an array to the plugins vector memory,
+	Description: 
+		Stores an array to the plugins vector memory, 
 	returns the ID you can use in GetRouteArray or DeleteArray.
 */
 native DeleteArray(ID);
 /*
-	Function:
+	Function: 
 		DeleteArray
-	Description:
+	Description: 
 		Remove contents of the memory at ID.
 */
 native AddExistingNodeToPathFinder(NodeID);
 /*
-	Function:
+	Function: 
 		AddExistingNodeToPathFinder
-	Description:
+	Description: 
 		Adds an created node to the routecalculator.
 	Returns -1 if the NodeID is invalid and 0 if node id does not exist or is already added, 1 on success.
 */
 native RemoveNode(NodeID);
 /*
-	Function:
+	Function: 
 		RemoveNode
-	Description:
+	Description: 
 		Deletes an node from the memory, to use in Write data, nodes loaded into the calculator won't be deleted, connections too.
 	Returns -1 if the NodeID is invalid and 0 if node id does not exist, 1 on success.
 */
 native DisconnectNodeFromNode(NodeIDOne,NodeIDTwo);
 /*
-	Function:
+	Function: 
 		DisconnectNodeFromNode
-	Description:
+	Description: 
 		Disconnects Node ID One from Two, please see RemoveNode for information about the calculator memory.
 	Returns -1 if the NodeID is invalid and 0 if node id does not exist, 1 on success.
 */
 native DisconnectAllFromNode(NodeID);
 /*
-	Function:
+	Function: 
 		DisconnectAllFromNode
-	Description:
+	Description: 
 		Disconnects all other nodes from NodeID, and NodeID from them.
 	Returns -1 if the NodeID is invalid and 0 if node id does not exist, 1 on success.
 */
 native DeleteNodeSystemAtNode(NodeID,array[],size = sizeof(array));
 /*
-	Function:
+	Function: 
 		DeleteNodeSystemAtNode
-	Description:
+	Description: 
 		Get ALL nodeIDs that are CONNECTED IN ANY WAY, ALSO VIA OTHER NODES to NodeID into the array[].
 		Usefull for deleting big-not-connected chunks of nodes.
 	Returns 0 on failure, the array size on success.
 */
 native GetNodeDirectionToConnect(NodeID,ConnectID);
 /*
-	Function:
+	Function: 
 		GetNodeDirectionToConnect
-	Description:
-		Get the direction this node[connectid] is connected in,
+	Description: 
+		Get the direction this node[connectid] is connected in, 
 		0 means that :
 			connectid is connected to nodeid
 			nodeid is connected to connectid
@@ -361,26 +361,26 @@ native GetNodeDirectionToConnect(NodeID,ConnectID);
 */
 native SetNodeDirectionToConnect(NodeID,ConectID,Direction);
 /*
-	Function:
+	Function: 
 		SetNodeDirectionToConnect
-	Description:
+	Description: 
 		See GetNodeDirectionToConnect, this SETS the direction manually.
 		It automaticly get the nodeID of 'ConectID' and sets the connection_direction to the good value.
 	Returns 0 on failure, 1 on success.
 */
 native NodeExists(NodeID);
 /*
-	Function:
+	Function: 
 		NodeExists
-	Description:
+	Description: 
 		Checks if the given nodeID exists in the memory.
 	Returns 0 if not, 1 if yes, -1 on failure.
 */
-native RemoveAllRouteIDFromQueue(/*routeid*/);
+native RemoveAllRouteIDFromQueue(routeid);
 /*
-	Function:
+	Function: 
 		RemoveAllRouteIDFromQueue
-	Description:
+	Description: 
 		Removes all pending calculations with 'routeid' from the queue.
 		R181 update: clears the WHOLE queue.
 	Returns -1 if the Queue is locked/accessed, else it returns the amount of entries deleted.
@@ -389,12 +389,12 @@ native RemoveAllRouteIDFromQueue(/*routeid*/);
 forward GPS_WhenRouteIsCalculated(routeid,node_id_array[],amount_of_nodes,Float:distance,Float:Polygon[],Polygon_Size,Float:NodePosX[],Float:NodePosY[],Float:NodePosZ[]);//Every processed Queue will be called here
 /*
 	Called when a path finding calculation is done.
-
+	
 	routeid - the id you specified for recognition of calls
 	node_id_array -	this array is up to 1792 cells long
 					it is build from the following information:
 
-					node_id_array[0] ... node_id_array[1791] -
+					node_id_array[0] ... node_id_array[1791] - 
 						all points (Node ID's) on the route
 						in following order:
 							from start, to end
@@ -405,7 +405,7 @@ forward GPS_WhenRouteIsCalculated(routeid,node_id_array[],amount_of_nodes,Float:
 	{
 		for(new i = 0; i < amount_of_nodes; ++i)
 		{
-			printf("Point(%d)=NodeID(%d), Position(X;Y;Z):{%f;%f;%f}",i,node_id_array[i:NodePosX[i],:NodePosY[i],:NodePosZ[i]);
+			printf("Point(%d)=NodeID(%d), Position(X;Y;Z):{%f;%f;%f}",i,node_id_array[i:NodePosX[i],:NodePosY[i],:NodePosZ[i]);	
 		}
 		return 1;
 	}
@@ -415,7 +415,7 @@ forward GPS_WhenRouteIsCalculated(routeid,node_id_array[],amount_of_nodes,Float:
 forward OnPlayerClosestNodeIDChange(playerid,old_NodeID,new_NodeID);
 /*
 	Called when a player's closest nodeID changes.
-
+	
 	playerid - the id of the player
 	old_NodeID and new_NodeID - the node ID's, old and new.
 		new_NodeID is 'now' the closest node ID.
@@ -423,17 +423,17 @@ forward OnPlayerClosestNodeIDChange(playerid,old_NodeID,new_NodeID);
 */
 native GetGPSdatVersion();
 /*
-	Function:
+	Function: 
 		GetGPSdatVersion
-	Description:
+	Description: 
 		Gets the file version of GPS.dat
 	Returns -1 if getting the GPS.dat version failed, else it returns the version number, this function is only available since package 162
 */
 native GetPluginVersion();
 /*
-	Function:
+	Function: 
 		GetPluginVersion
-	Description:
+	Description: 
 		Gets the plugin version
 	Returns the plugin version, this function is only available since package 162
 */
@@ -442,41 +442,41 @@ stock GetIncludeVersion()
 	return INCLUDE_VERSION;
 }
 /*
-	Function:
+	Function: 
 		GetIncludeVersion
-	Description:
+	Description: 
 		Gets the include file version
 	Returns the inclde file version, this function is only available since package 162
 */
 native gps_AddPlayer(playerid);
 /*
-	Function:
+	Function: 
 		gps_AddPlayer
-	Description:
+	Description: 
 		adds the player to the update check.
 	Returns 1 on success, 0 on failure, 2 if player already in list.
 */
 native gps_RemovePlayer(playerid);
 /*
-	Function:
+	Function: 
 		gps_RemovePlayer
-	Description:
+	Description: 
 		removes the player from the update check.
 	Returns 1 on success, 0 on failure.
 */
 native GetRouteArrayFromTo(ID,From,To,dest[],size=sizeof(dest));
 /*
-	Function:
+	Function: 
 		GetRouteArrayFromTo
-	Description:
+	Description: 
 		Please see GetRouteArray, the only difference is you can specify an range, from to, to extract.
 	Returns amount of nodes put into dest[].
 */
 native GetRouteArraySize(ID);
 /*
-	Function:
+	Function: 
 		GetRouteArraySize
-	Description:
+	Description: 
 		returns the amount of nodes in the <ID>array.
 	Returns returns the amount of nodes in the <ID>array.
 */
@@ -584,7 +584,7 @@ native RebuildGraph();
 	Description:
 		Rebuilds the internal node data for the pathfinder, usefull for use after AddNode without AddToPathFinder and ConnectNodes, change node positions, etc.
 	Returns:
-		1 on success, 0 on failure
+		1 on success, 0 on failure	
 */
 native GetAmountOfFreeNodeSlots();
 /*

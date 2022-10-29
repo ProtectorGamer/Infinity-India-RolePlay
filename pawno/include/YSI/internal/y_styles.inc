@@ -1,4 +1,4 @@
-/**--------------------------------------------------------------------------**\
+/*----------------------------------------------------------------------------*\
 					=================================
 					 y_styles - Text style handling.
 					=================================
@@ -59,8 +59,7 @@ Functions:
 Variables:
 	Global:
 		-
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 // Load the styles for the current item.  I have decided to completely switch
 // over to XML as there are just too many options now to make INI files worth
@@ -166,15 +165,16 @@ stock Styles_GetData(index, style[E_STYLE_DATA], label[E_3D_DATA])
 	}
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>Styles_EntryTag</summary>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Styles_EntryTag
+Params:
 	-
-</returns>
-<remarks>
+Return:
+	-
+Notes:
 	Called to load "<entry>" tags from XML style files.
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 forward Styles_EntryTag();
 
@@ -403,19 +403,20 @@ public Styles_3DTag()
 	return YSI_g_sCur3D++;
 }
 
-/**--------------------------------------------------------------------------**\
-<summary>Styles_OnScriptInit</summary>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Styles_OnScriptInit
+Params:
 	-
-</returns>
-<remarks>
+Return:
+	-
+Notes:
 	Loads all the style files relevant to this script.  Filters by text group in
 	the XML callback.  Loops through all publics, then loops through them all
 	again to check that the current file hasn't already been loaded.  Despite
 	the filtering, it is done this way to ensure that all relevant text draw
 	styles are loaded for when we are displaying text.
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 //hook OnScriptInit()
 public _Styles_SpecialInit()
@@ -483,15 +484,16 @@ public _Styles_SpecialInit()
 	XML_Parse(YSI_g_sXMLRules, fname);
 }*/
 
-/**--------------------------------------------------------------------------**\
-<summary>Styles_Reload</summary>
-<returns>
+/*----------------------------------------------------------------------------*\
+Function:
+	Styles_Reload
+Params:
 	-
-</returns>
-<remarks>
+Return:
+	-
+Notes:
 	Reloads all the string styles in all scripts.  Use sparingly!
-</remarks>
-\**--------------------------------------------------------------------------**/
+\*----------------------------------------------------------------------------*/
 
 stock Styles_Reload()
 {

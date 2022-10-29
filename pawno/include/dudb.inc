@@ -101,7 +101,6 @@ stock udb_Exists(nickname[]) {
   return fexist(tmp);
 }
 
-
 stock udb_Remove(nickname[]) {
   new tmp[MAX_STRING];
   format(tmp,sizeof(tmp),"%s.dudb.sav",udb_encode(nickname));
@@ -148,7 +147,8 @@ stock udb_UserInt(nickname[],key[]) {
 stock udb_CheckLogin(nickname[],pwd[]) {
   new fname[MAX_STRING];
   format(fname,sizeof(fname),"%s.dudb.sav",udb_encode(nickname));
-  if (udb_UserInt(nickname,"password_hash")==udb_hash(pwd)) return true;
+  new PasswordInFile = dini_Int(fname,"password_hash");
+  if ( PasswordInFile == udb_hash(pwd) ) return true;
   return false;
 }
 
