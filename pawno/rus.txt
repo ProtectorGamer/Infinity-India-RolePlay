@@ -1,3 +1,4 @@
-D:\Infinity India RolePlay\Infinity-India-RolePlay\pawno\include\weapon-config.inc(4775) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "freeze_sync"
+D:\IIRP\filterscripts\radio.pwn(109) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+D:\IIRP\filterscripts\radio.pwn(114) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2017, ITB CompuPhase
 
