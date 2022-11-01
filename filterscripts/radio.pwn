@@ -1,3 +1,4 @@
+
 /********************************************************************************/
 /*>>>>>>>>>>>>>>>>>>>>      SCRIPT BY TYkE_OP             <<<<<<<<<<<<<<<<<<<<<<*/
 /********************************************************************************/
@@ -106,7 +107,7 @@ public OnPlayerConnect(playerid)
 public OnPlayerDisconnect(playerid, reason)
 {
     PlayerInfo[playerid][pVoiceRadio] = 0;
-        if (lstream[playerid])
+    if (lstream[playerid])
     {
         SvDeleteStream(lstream[playerid]);
         lstream[playerid] = SV_NULL;
