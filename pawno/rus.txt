@@ -1,4 +1,9 @@
-D:\IIRP\filterscripts\radio.pwn(109) : íåïðàâèëüíàÿ òàáóëÿöèÿ
-D:\IIRP\filterscripts\radio.pwn(114) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+D:\Infinity India RolePlay\Infinity-India-RolePlay\pawno\include\weapon-config.inc(4775) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "freeze_sync"
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(88951) : ïðåäóïðåæäåíèå 202: êîëè÷åñòâî àðãóìåíòîâ íå ñîâïàäàåò ñ îáúÿâëåíèåì
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(88964) : ïðåäóïðåæäåíèå 202: êîëè÷åñòâî àðãóìåíòîâ íå ñîâïàäàåò ñ îáúÿâëåíèåì
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(88973) : ïðåäóïðåæäåíèå 202: êîëè÷åñòâî àðãóìåíòîâ íå ñîâïàäàåò ñ îáúÿâëåíèåì
+D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(88979) : ïðåäóïðåæäåíèå 202: êîëè÷åñòâî àðãóìåíòîâ íå ñîâïàäàåò ñ îáúÿâëåíèåì
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2017, ITB CompuPhase
 
+
+Ïðåäóïðåæäåíèé:4.
