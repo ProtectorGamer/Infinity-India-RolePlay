@@ -1,4 +1,4 @@
-/*----------------------------------------------------------------------------*\
+/**--------------------------------------------------------------------------**\
                               =====================
                                YSI - Version Check
                               =====================
@@ -91,7 +91,8 @@ Operators:
 	-
 Natives:
 	-
-\*----------------------------------------------------------------------------*/
+</remarks>
+\**--------------------------------------------------------------------------**/
 
 #include <a_samp>
 #tryinclude <a_http>
@@ -109,9 +110,9 @@ Natives:
 
 #define YSI_VERSION_RESPO               2
 
-#define YSI_VERSION_MAJOR               1
-#define YSI_VERSION_MINOR               06
-#define YSI_VERSION_BUILD               0002
+#define YSI_VERSION_MAJOR               3
+#define YSI_VERSION_MINOR               09
+#define YSI_VERSION_BUILD               0684
 
 #define YSI_VERSION                     #YSI_VERSION_MAJOR "." #YSI_VERSION_MINOR "." #YSI_VERSION_BUILD
 
@@ -126,23 +127,29 @@ Natives:
 			YSI_gLockData[YSI_gLockData[2]++] = (YSI_gLockData[3] | 0x09) & ~0x04;
 			YSI_gLockData[2] *= (6 * x) - 5;
 		#endif
-		YVers_OnScriptInit();
+		#if defined YVers_OnScriptInit
+			YVers_OnScriptInit();
+		#endif
 		return 1;
 	}
 	
 	#undef OnScriptInit
-	#define OnScriptInit(%0) YVers_OnScriptInit(%0) <_ALS_:hooked>
-	forward YVers_OnScriptInit();public YVers_OnScriptInit()<_ALS_:unhooked>{return 1;}public YVers_OnScriptInit()<>{return 1;}
+	#define OnScriptInit YVers_OnScriptInit
+	#if defined YVers_OnScriptInit
+		forward YVers_OnScriptInit();
+	#endif
 	
 #else
-	/*------------------------------------------------------------------------*\
+/**----------------------------------------------------------------------**\
 	Hook:
 		OnScriptInit
-	Notes:
+	</returns>
+<remarks>
 		Constructor.  Checks to see if there is a new version available.  This
 		code can not use ANY of the rest of YSI as it needs to be included by
 		everything first.
-	\*------------------------------------------------------------------------*/
+</remarks>
+\**----------------------------------------------------------------------**/
 	
 	#if !defined _inc_a_http
 	
@@ -169,13 +176,17 @@ Natives:
 			print(" |                                     | ");
 			print(" ======================================= ");
 			print(" ");
-			YVers_OnScriptInit();
+			#if defined YVers_OnScriptInit
+				YVers_OnScriptInit();
+			#endif
 			return 1;
 		}
 		
 		#undef OnScriptInit
-		#define OnScriptInit(%0) YVers_OnScriptInit(%0) <_ALS_:hooked>
-		forward YVers_OnScriptInit();public YVers_OnScriptInit()<_ALS_:unhooked>{return 1;}public YVers_OnScriptInit()<>{return 1;}
+		#define OnScriptInit YVers_OnScriptInit
+		#if defined YVers_OnScriptInit
+			forward YVers_OnScriptInit();
+		#endif
 		
 		#endinput
 	#endif
@@ -231,32 +242,36 @@ Natives:
 		//  
 		// This remote script has now been updated to include changelog
 		// information and keeps a record of what IPs are connecting.
-		HTTP(0, HTTP_GET, "ysi-version.y-less.com/index.php?c=" #YSI_VERSION_RESPO "&v=" YSI_VERSION, "", "YVers_Callback");
-		YVers_OnScriptInit();
+		HTTP(0, HTTP_GET, "version.ysi.tl/index.php?c=" #YSI_VERSION_RESPO "&v=" YSI_VERSION, "", "YVers_Callback");
+		#if defined YVers_OnScriptInit
+			YVers_OnScriptInit();
+		#endif
 		return 1;
 	}
 	
 	#undef OnScriptInit
-	#define OnScriptInit(%0) YVers_OnScriptInit(%0) <_ALS_:hooked>
-	forward YVers_OnScriptInit();public YVers_OnScriptInit()<_ALS_:unhooked>{return 1;}public YVers_OnScriptInit()<>{return 1;}
+	#define OnScriptInit YVers_OnScriptInit
+	#if defined YVers_OnScriptInit
+		forward YVers_OnScriptInit();
+	#endif
 	
-	/*------------------------------------------------------------------------*\
-	Function:
-		YVers_Callback
-	Params:
-		index - Not used.
-		code - Response code from the server.
-		data[] - HTTP data sent from the server.
-	Return:
+	/**----------------------------------------------------------------------**\
+	<summary>YVers_Callback</summary>
+	<param name="	index">Not used.</param>
+	<param name="	code">Response code from the server.</param>
+	<param name="	data[]">HTTP data sent from the server.</param>
+	<returns>
 		-
-	Notes:
+	</returns>
+	<remarks>
 		This is called when my server responds to the HTTP request sent above
 		(or when it doesn't).  This prints information on the current and any
 		future versions of YSI.  Note that it only does a strcmp to determine if
 		the version is newer - people can't have versions newer than the latest,
 		onlyolder or equal (unless they play with the version numbers, but then
 		that's their own fault).
-	\*------------------------------------------------------------------------*/
+	</remarks>
+	\**----------------------------------------------------------------------**/
 	
 	public YVers_Callback(index, code, data[])
 	{

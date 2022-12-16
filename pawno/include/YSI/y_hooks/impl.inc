@@ -1,4 +1,4 @@
-/*----------------------------------------------------------------------------*\
+/**--------------------------------------------------------------------------**\
 					==============================
 					 y_hooks - Hook any callback!
 					==============================
@@ -64,7 +64,8 @@ Changelog:
 		Updated OnPlayerUpdate code using Google63's SCTRL jump code.
 	06/08/10:
 		First version
-\*----------------------------------------------------------------------------*/
+</remarks>
+\**--------------------------------------------------------------------------**/
 
 #include "internal\y_version"
 
@@ -177,17 +178,17 @@ stock Hooks_RedirectPublic(from[], to[], final = 1)
 	return 0;
 }
 
-/*----------------------------------------------------------------------------*\
-Function:
-	Hooks_AddOne
-Params:
-	idx - Public function table index.
-	&toaddidx - Current slot in the global array.
-Return:
+/**--------------------------------------------------------------------------**\
+<summary>Hooks_AddOne</summary>
+<param name="idx">Public function table index.</param>
+<param name="&toaddidx">Current slot in the global array.</param>
+<returns>
 	-
-Notes:
+</returns>
+<remarks>
 	Stores a public function by index in to the array of function pointers.
-\*----------------------------------------------------------------------------*/
+</remarks>
+\**--------------------------------------------------------------------------**/
 
 static Hooks_AddOne(idx, &toaddidx)
 {
@@ -206,20 +207,20 @@ static Hooks_AddOne(idx, &toaddidx)
 	}
 }
 
-/*----------------------------------------------------------------------------*\
-Function:
-	Hooks_FindAll
-Params:
-	name[] - Callback to find.
-	&toaddidx - Current slot in the global array.
-	&start - Where to store the start index.
-	&end - Where to store the end index.
-Return:
+/**--------------------------------------------------------------------------**\
+<summary>Hooks_FindAll</summary>
+<param name="name[]">Callback to find.</param>
+<param name="&toaddidx">Current slot in the global array.</param>
+<param name="&start">Where to store the start index.</param>
+<param name="&end">Where to store the end index.</param>
+<returns>
 	-
-Notes:
+</returns>
+<remarks>
 	Finds all public functions with the standard y_hooks prefix and a suffix of
 	the given string, as well as the y_hooks ALS next call (if there is one).
-\*----------------------------------------------------------------------------*/
+</remarks>
+\**--------------------------------------------------------------------------**/
 
 static Hooks_FindAll(name[], &toaddidx, &start, &end)
 {
@@ -255,18 +256,18 @@ static Hooks_FindAll(name[], &toaddidx, &start, &end)
 	return end - start;
 }
 
-/*----------------------------------------------------------------------------*\
-Function:
-	Hooks_RemovePublic
-Params:
-	from[] - Public function to remove.
-	final - The return address to use instead.
-Return:
+/**--------------------------------------------------------------------------**\
+<summary>Hooks_RemovePublic</summary>
+<param name="from[]">Public function to remove.</param>
+<param name="final">The return address to use instead.</param>
+<returns>
 	The address of "func".
-Notes:
+</returns>
+<remarks>
 	Replaces a public function with another function that only returns the given
 	value (must be -1, 0, or 1).
-\*----------------------------------------------------------------------------*/
+</remarks>
+\**--------------------------------------------------------------------------**/
 
 static Hooks_RemovePublic(from[], final)
 {
@@ -376,6 +377,12 @@ public OnScriptInit()
 	HOOKS_DO_ONE_CALLBACK<PlayerEditObject>
 	HOOKS_DO_ONE_CALLBACK<PlayerEditAttachedObject>
 	HOOKS_DO_ONE_CALLBACK<PlayerSelectObject>
+	// YSI
+	HOOKS_DO_ONE_CALLBACK<PlayerEnterArea>
+	HOOKS_DO_ONE_CALLBACK<PlayerLeaveArea>
+	HOOKS_DO_ONE_CALLBACK<PlayerFinishRace>
+	HOOKS_DO_ONE_CALLBACK<PlayerExitRace>
+	HOOKS_DO_ONE_CALLBACK<RaceEnd>
 	// Streamer plugin.
 	#if defined _YSI_PLUGINS_STREAMER
 		HOOKS_DO_ONE_CALLBACK<DynamicObjectMoved>
@@ -404,10 +411,13 @@ public OnScriptInit()
 		YSI_gLockData[YSI_gLockData[2] + 1] -= YSI_gLockData[0];
 		YSI_gLockData[1] += '.' + 5;
 	#endif
-	// Do all but one other callback - we already did the ALS forward first.
 	new
-		end   = _:YSI_g_sCallbackEnd[ALS_OnScriptInit] - 1,
+		end   = _:YSI_g_sCallbackEnd[ALS_OnScriptInit],
 		start = _:YSI_g_sCallbackStart[ALS_OnScriptInit];
+	#if defined S@@_OnScriptInit
+		// Do all but one other callback - we already did the ALS forward first.
+		--end;
+	#endif
 	while (start++ != end)
 	{
 		//printf("%d %d", start, end);
@@ -664,6 +674,11 @@ public OnPlayerDisconnect(playerid, reason)
 		#emit PUSH.pri
 		#emit MOVE.pri
 		#emit SCTRL      6
+		// alt = f()
+		// pri = 0xFFFFFFFE
+		// push (f() & 0xFFFFFFFE)
+		// pri = ret & f()
+		// ret = (f() & 0xFFFFFFFE) | (ret & f())
 		#emit MOVE.alt
 		#emit CONST.pri  0xFFFFFFFE
 		#emit AND
@@ -1737,22 +1752,28 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
 #define OnVehicleDamageStatusUpdate S@@_OnVehicleDamageStatusUpdate
 HOOK_FORWARD<VehicleDamageStatusUpdate>
 
-public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat)
+public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_x, Float:new_y, Float:new_z, Float:vel_x, Float:vel_y, Float:vel_z)
 {
-	P:2("Hooks_OnUnoccupiedVehicleUpdate called: %d, %d, %d", vehicleid, playerid, passenger_seat);
+	P:2("Hooks_OnUnoccupiedVehicleUpdate called: %d, %d, %d, %f, %f, %f, %f, %f, %f", vehicleid, playerid, passenger_seat, new_x, new_y, new_z, vel_x, vel_y, vel_z);
 	new
 		end   = _:YSI_g_sCallbackEnd[ALS_OnUnoccupiedVehicleUpdate],
 		start = _:YSI_g_sCallbackStart[ALS_OnUnoccupiedVehicleUpdate],
 		ret = ALS_R_UnoccupiedVehicleUpdate;
 	while (start++ != end)
 	{
+		#emit PUSH.S vel_z
+		#emit PUSH.S vel_y
+		#emit PUSH.S vel_x
+		#emit PUSH.S new_z
+		#emit PUSH.S new_y
+		#emit PUSH.S new_x
 		#emit PUSH.S passenger_seat
 		#emit PUSH.S playerid
 		#emit PUSH.S vehicleid
 		// I wonder if I could hack the stack with a negative number so that when
 		// the called function returns it puts all the header data BACK on to the
 		// stack instead of removing the parameters and header.
-		#emit PUSH.C     12
+		#emit PUSH.C     36
 		#emit CONST.alt  YSI_g_sCallbackAddresses
 		#emit LOAD.S.pri start
 		//#emit INC.pri
@@ -2318,20 +2339,21 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 #define OnPlayerClickPlayer S@@_OnPlayerClickPlayer
 HOOK_FORWARD<PlayerClickPlayer>
 
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid)
+public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)
 {
-	P:2("Hooks_OnPlayerTakeDamage called: %d, %d, %f, %d", playerid, issuerid, Float:amount, weaponid);
+	P:2("Hooks_OnPlayerTakeDamage called: %d, %d, %f, %d, %d", playerid, issuerid, Float:amount, weaponid, bodypart);
 	new
 		end   = _:YSI_g_sCallbackEnd[ALS_OnPlayerTakeDamage],
 		start = _:YSI_g_sCallbackStart[ALS_OnPlayerTakeDamage],
 		ret = ALS_R_PlayerTakeDamage;
 	while (start++ != end)
 	{
+		#emit PUSH.S bodypart
 		#emit PUSH.S weaponid
 		#emit PUSH.S amount
 		#emit PUSH.S issuerid
 		#emit PUSH.S playerid
-		#emit PUSH.C     16
+		#emit PUSH.C     20
 		#emit CONST.alt  YSI_g_sCallbackAddresses
 		#emit LOAD.S.pri start
 		//#emit INC.pri
@@ -2364,20 +2386,21 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid)
 #define OnPlayerTakeDamage S@@_OnPlayerTakeDamage
 HOOK_FORWARD<PlayerTakeDamage>
 
-public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid)
+public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)
 {
-	P:2("Hooks_OnPlayerGiveDamage called: %d, %d, %f, %d", playerid, damagedid, Float:amount, weaponid);
+	P:2("Hooks_OnPlayerGiveDamage called: %d, %d, %f, %d, %d", playerid, damagedid, Float:amount, weaponid, bodypart);
 	new
 		end   = _:YSI_g_sCallbackEnd[ALS_OnPlayerGiveDamage],
 		start = _:YSI_g_sCallbackStart[ALS_OnPlayerGiveDamage],
 		ret = ALS_R_PlayerGiveDamage;
 	while (start++ != end)
 	{
+		#emit PUSH.S bodypart
 		#emit PUSH.S weaponid
 		#emit PUSH.S amount
 		#emit PUSH.S damagedid
 		#emit PUSH.S playerid
-		#emit PUSH.C     16
+		#emit PUSH.C     20
 		#emit CONST.alt  YSI_g_sCallbackAddresses
 		#emit LOAD.S.pri start
 		//#emit INC.pri
@@ -2505,6 +2528,248 @@ public OnPlayerLogout(playerid, uid)
 #endif
 #define OnPlayerLogout S@@_OnPlayerLogout
 HOOK_FORWARD<PlayerLogout>
+
+#if !defined _ALS_OnPlayerEnterArea
+	forward OnPlayerEnterArea(playerid, areaid);
+#endif
+
+public OnPlayerEnterArea(playerid, areaid)
+{
+	P:2("Hooks_OnPlayerEnterArea called: %d, %d", playerid, areaid);
+	new
+		end   = _:YSI_g_sCallbackEnd[ALS_OnPlayerEnterArea],
+		start = _:YSI_g_sCallbackStart[ALS_OnPlayerEnterArea],
+		ret = ALS_R_PlayerEnterArea;
+	while (start++ != end)
+	{
+		#emit PUSH.S areaid
+		#emit PUSH.S playerid
+		#emit PUSH.C     8
+		#emit CONST.alt  YSI_g_sCallbackAddresses
+		#emit LOAD.S.pri start
+		//#emit INC.pri
+		//#emit STOR.S.pri start
+		#emit LIDX
+		#emit MOVE.alt
+		#emit LCTRL      6
+		#emit ADD.C      24
+		#emit PUSH.pri
+		#emit MOVE.pri
+		#emit SCTRL      6
+		#emit MOVE.alt
+		#emit CONST.pri  0xFFFFFFFE
+		#emit AND
+		#emit PUSH.pri
+		#emit LOAD.S.pri ret
+		#emit AND
+		#emit POP.alt
+		#emit OR
+		#emit STOR.S.pri ret
+		if (ret < 0) return ret + 1;
+	}
+	return ret;
+}
+#if defined _ALS_OnPlayerEnterArea
+	#undef OnPlayerEnterArea
+#else
+	#define _ALS_OnPlayerEnterArea
+#endif
+#define OnPlayerEnterArea S@@_OnPlayerEnterArea
+HOOK_FORWARD<PlayerEnterArea>
+
+#if !defined _ALS_OnPlayerLeaveArea
+	forward OnPlayerLeaveArea(playerid, areaid);
+#endif
+
+public OnPlayerLeaveArea(playerid, areaid)
+{
+	P:2("Hooks_OnPlayerLeaveArea called: %d, %d", playerid, areaid);
+	new
+		end   = _:YSI_g_sCallbackEnd[ALS_OnPlayerLeaveArea],
+		start = _:YSI_g_sCallbackStart[ALS_OnPlayerLeaveArea],
+		ret = ALS_R_PlayerLeaveArea;
+	while (start++ != end)
+	{
+		#emit PUSH.S areaid
+		#emit PUSH.S playerid
+		#emit PUSH.C     8
+		#emit CONST.alt  YSI_g_sCallbackAddresses
+		#emit LOAD.S.pri start
+		//#emit INC.pri
+		//#emit STOR.S.pri start
+		#emit LIDX
+		#emit MOVE.alt
+		#emit LCTRL      6
+		#emit ADD.C      24
+		#emit PUSH.pri
+		#emit MOVE.pri
+		#emit SCTRL      6
+		#emit MOVE.alt
+		#emit CONST.pri  0xFFFFFFFE
+		#emit AND
+		#emit PUSH.pri
+		#emit LOAD.S.pri ret
+		#emit AND
+		#emit POP.alt
+		#emit OR
+		#emit STOR.S.pri ret
+		if (ret < 0) return ret + 1;
+	}
+	return ret;
+}
+#if defined _ALS_OnPlayerLeaveArea
+	#undef OnPlayerLeaveArea
+#else
+	#define _ALS_OnPlayerLeaveArea
+#endif
+#define OnPlayerLeaveArea S@@_OnPlayerLeaveArea
+HOOK_FORWARD<PlayerLeaveArea>
+
+#if !defined _ALS_OnPlayerFinishRace
+	forward OnPlayerFinishRace(playerid, race, position, prize, time);
+#endif
+
+public OnPlayerFinishRace(playerid, race, position, prize, time)
+{
+	P:2("Hooks_OnPlayerFinishRace called: %d, %d, %d, %d, %d", playerid, race, position, prize, time);
+	new
+		end   = _:YSI_g_sCallbackEnd[ALS_OnPlayerFinishRace],
+		start = _:YSI_g_sCallbackStart[ALS_OnPlayerFinishRace],
+		ret = ALS_R_PlayerFinishRace;
+	while (start++ != end)
+	{
+		#emit PUSH.S time
+		#emit PUSH.S prize
+		#emit PUSH.S position
+		#emit PUSH.S race
+		#emit PUSH.S playerid
+		#emit PUSH.C     20
+		#emit CONST.alt  YSI_g_sCallbackAddresses
+		#emit LOAD.S.pri start
+		//#emit INC.pri
+		//#emit STOR.S.pri start
+		#emit LIDX
+		#emit MOVE.alt
+		#emit LCTRL      6
+		#emit ADD.C      24
+		#emit PUSH.pri
+		#emit MOVE.pri
+		#emit SCTRL      6
+		#emit MOVE.alt
+		#emit CONST.pri  0xFFFFFFFE
+		#emit AND
+		#emit PUSH.pri
+		#emit LOAD.S.pri ret
+		#emit AND
+		#emit POP.alt
+		#emit OR
+		#emit STOR.S.pri ret
+		if (ret < 0) return ret + 1;
+	}
+	return ret;
+}
+#if defined _ALS_OnPlayerFinishRace
+	#undef OnPlayerFinishRace
+#else
+	#define _ALS_OnPlayerFinishRace
+#endif
+#define OnPlayerFinishRace S@@_OnPlayerFinishRace
+HOOK_FORWARD<PlayerFinishRace>
+
+#if !defined _ALS_OnPlayerExitRace
+	forward OnPlayerExitRace(playerid, race);
+#endif
+
+public OnPlayerExitRace(playerid, race)
+{
+	P:2("Hooks_OnPlayerExitRace called: %d, %d", playerid, race);
+	new
+		end   = _:YSI_g_sCallbackEnd[ALS_OnPlayerExitRace],
+		start = _:YSI_g_sCallbackStart[ALS_OnPlayerExitRace],
+		ret = ALS_R_PlayerExitRace;
+	while (start++ != end)
+	{
+		#emit PUSH.S race
+		#emit PUSH.S playerid
+		#emit PUSH.C     8
+		#emit CONST.alt  YSI_g_sCallbackAddresses
+		#emit LOAD.S.pri start
+		//#emit INC.pri
+		//#emit STOR.S.pri start
+		#emit LIDX
+		#emit MOVE.alt
+		#emit LCTRL      6
+		#emit ADD.C      24
+		#emit PUSH.pri
+		#emit MOVE.pri
+		#emit SCTRL      6
+		#emit MOVE.alt
+		#emit CONST.pri  0xFFFFFFFE
+		#emit AND
+		#emit PUSH.pri
+		#emit LOAD.S.pri ret
+		#emit AND
+		#emit POP.alt
+		#emit OR
+		#emit STOR.S.pri ret
+		if (ret < 0) return ret + 1;
+	}
+	return ret;
+}
+#if defined _ALS_OnPlayerExitRace
+	#undef OnPlayerExitRace
+#else
+	#define _ALS_OnPlayerExitRace
+#endif
+#define OnPlayerExitRace S@@_OnPlayerExitRace
+HOOK_FORWARD<PlayerExitRace>
+
+#if !defined _ALS_OnRaceEnd
+	forward OnRaceEnd(race);
+#endif
+
+public OnRaceEnd(race)
+{
+	P:2("Hooks_OnRaceEnd called: %d", race);
+	new
+		end   = _:YSI_g_sCallbackEnd[ALS_OnRaceEnd],
+		start = _:YSI_g_sCallbackStart[ALS_OnRaceEnd],
+		ret = ALS_R_RaceEnd;
+	while (start++ != end)
+	{
+		#emit PUSH.S race
+		#emit PUSH.C     4
+		#emit CONST.alt  YSI_g_sCallbackAddresses
+		#emit LOAD.S.pri start
+		//#emit INC.pri
+		//#emit STOR.S.pri start
+		#emit LIDX
+		#emit MOVE.alt
+		#emit LCTRL      6
+		#emit ADD.C      24
+		#emit PUSH.pri
+		#emit MOVE.pri
+		#emit SCTRL      6
+		#emit MOVE.alt
+		#emit CONST.pri  0xFFFFFFFE
+		#emit AND
+		#emit PUSH.pri
+		#emit LOAD.S.pri ret
+		#emit AND
+		#emit POP.alt
+		#emit OR
+		#emit STOR.S.pri ret
+		if (ret < 0) return ret + 1;
+	}
+	return ret;
+}
+#if defined _ALS_OnRaceEnd
+	#undef OnRaceEnd
+#else
+	#define _ALS_OnRaceEnd
+#endif
+#define OnRaceEnd S@@_OnRaceEnd
+HOOK_FORWARD<RaceEnd>
 
 #if !defined OnPlayerClickMap
 	#undef ALS_MAKE

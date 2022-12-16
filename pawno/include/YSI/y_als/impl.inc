@@ -65,6 +65,12 @@ enum ALS
 	Bit:ALS_OnPlayerClickPlayerTextDraw,
 	Bit:ALS_OnPlayerEditObject,
 	Bit:ALS_OnPlayerEditAttachedObject,
+	// YSI
+	Bit:ALS_OnPlayerEnterArea,
+	Bit:ALS_OnPlayerLeaveArea,
+	Bit:ALS_OnPlayerFinishRace,
+	Bit:ALS_OnPlayerExitRace,
+	Bit:ALS_OnRaceEnd,
 	#if defined _YSI_PLUGINS_STREAMER
 		Bit:ALS_OnDynamicObjectMoved,
 		Bit:ALS_OnPlayerEditDynamicObject,
@@ -154,6 +160,12 @@ enum ALS
 #define ALS_R_PlayerEditObject 1
 #define ALS_R_PlayerEditAttachedObject 1
 #define ALS_R_PlayerSelectObject 1
+// YSI
+#define ALS_R_PlayerEnterArea 1
+#define ALS_R_PlayerLeaveArea 1
+#define ALS_R_PlayerFinishRace 1
+#define ALS_R_PlayerExitRace 1
+#define ALS_R_RaceEnd 1
 // Streamer plugins.
 #define ALS_R_DynamicObjectMoved 1
 #define ALS_R_PlayerEditDynamicObject 1
@@ -213,18 +225,24 @@ enum ALS
 #define ALS_DO_PlayerClickPlayer<%0> %0<PlayerClickPlayer,iii>(more:playerid,more:clickedplayerid,end:source)
 #define ALS_DO_PlayerLogin<%0> %0<PlayerLogin,ii>(more:playerid,end:uid)
 #define ALS_DO_PlayerLogout<%0> %0<PlayerLogout,ii>(more:playerid,end:uid)
-#define ALS_DO_PlayerGiveDamage<%0> %0<PlayerGiveDamage,iifi>(more:playerid,more:damagedid,Float:amount,end:weaponid)
-#define ALS_DO_PlayerTakeDamage<%0> %0<PlayerTakeDamage,iifi>(more:playerid,more:issuerid,Float:amount,end:weaponid)
+#define ALS_DO_PlayerGiveDamage<%0> %0<PlayerGiveDamage,iifii>(more:playerid,more:damagedid,Float:amount,more:weaponid,end:bodypart)
+#define ALS_DO_PlayerTakeDamage<%0> %0<PlayerTakeDamage,iifii>(more:playerid,more:issuerid,Float:amount,more:weaponid,end:bodypart)
 #define ALS_DO_PlayerClickMap<%0> %0<PlayerClickMap,ifff>(more:playerid,Float:fX,Float:fY,end_Float:fZ)
 #define ALS_DO_PlayerCommandReceived<%0> %0<PlayerCommandReceived,is>(more:playerid,end_string:cmdtext[])
 #define ALS_DO_PlayerCommandPerformed<%0> %0<PlayerCommandPerformed,isi>(more:playerid,string:cmdtext[],end:success)
-#define ALS_DO_UnoccupiedVehicleUpdate<%0> %0<UnoccupiedVehicleUpdate,iii>(more:vehicleid,more:playerid,end:passenger_seat)
+#define ALS_DO_UnoccupiedVehicleUpdate<%0> %0<UnoccupiedVehicleUpdate,iiiffffff>(more:vehicleid,more:playerid,more:passenger_seat,Float:new_x,Float:new_y,Float:new_z,Float:vel_x,Float:vel_y,end_Float:vel_z)
 // 0.3e
 #define ALS_DO_PlayerClickTextDraw<%0> %0<PlayerClickTextDraw,ii>(more:playerid,end_tag:Text:clickedid)
 #define ALS_DO_PlayerClickPlayerTextDraw<%0> %0<PlayerClickPlayerTextDraw,iii>(more:playerid,end_tag:PlayerText:playertextid)
 #define ALS_DO_PlayerEditObject<%0> %0<PlayerEditObject,iiiiffffff>(more:playerid,more:playerobject,more:objectid,more:response,Float:fX,Float:fY,Float:fZ,Float:fRotX,Float:fRotY,end_Float:fRotZ)
 #define ALS_DO_PlayerEditAttachedObject<%0> %0<PlayerEditAttachedObject,iiiiifffffffff>(more:playerid,more:response,more:index,more:modelid,more:boneid,Float:fOffsetX,Float:fOffsetY,Float:fOffsetZ,Float:fRotX,Float:fRotY,Float:fRotZ,Float:fScaleX,Float:fScaleY,end_Float:fScaleZ)
 #define ALS_DO_PlayerSelectObject<%0> %0<PlayerSelectObject,iiiifff>(more:playerid,more:type,more:objectid,more:modelid,Float:fX,Float:fY,end_Float:fZ)
+// YSI
+#define ALS_DO_PlayerEnterArea<%0> %0<PlayerEnterArea,ii>(more:playerid,end:areaid)
+#define ALS_DO_PlayerLeaveArea<%0> %0<PlayerLeaveArea,ii>(more:playerid,end:areaid)
+#define ALS_DO_PlayerFinishRace<%0> %0<PlayerFinishRace,iiiii>(more:playerid,more:race,more:position,more:prize,end:time)
+#define ALS_DO_PlayerExitRace<%0> %0<PlayerExitRace,ii>(more:playerid,end:race)
+#define ALS_DO_RaceEnd<%0> %0<RaceEnd,i>(end:race)
 // Streamer plugin.
 #define ALS_DO_DynamicObjectMoved<%0> %0<DynamicObjectMoved,i>(end:objectid)
 #define ALS_DO_PlayerEditDynamicObject<%0> %0<PlayerEditDynamicObject,iiiiiiiii>(more:playerid,more:objectid,more:response,Float:x,Float:y,Float:z,Float:rx,Float:ry,end_Float:rz)
