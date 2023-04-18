@@ -1,9 +1,2 @@
-D:\Infinity India RolePlay\Infinity-India-RolePlay\pawno\include\weapon-config.inc(4775) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "freeze_sync"
-D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(7203) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
-D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(95851) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
-D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(101220) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
-D:\Infinity India RolePlay\Infinity-India-RolePlay\gamemodes\main.pwn(117662) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "using_deprecated_foreach_syntax" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2017, ITB CompuPhase
 
-
-Ïðåäóïðåæäåíèé:4.

@@ -1,14 +1,13 @@
 /*
- *            Dini 1.6
- *       (c) Copyright 2006-2008 by DracoBlue
+ *            Dini 1.5.1
+ *       (c) Copyright 2006 by DracoBlue
  *
  * @author    : DracoBlue (http://dracoblue.com)
  * @date      : 13th May 2006
- * @update    : 16th Sep 2008
+ * @update    : 3rd June 2007
+ * @require   : DUtils 1.8
  *
  * This file is provided as is (no warranties).
- *
- * It's released under the terms of MIT.
  *
  * Feel free to use it, a little message in
  * about box is honouring thing, isn't it?
@@ -20,70 +19,64 @@
 #endif
 
 #define _dini_included
-#pragma library dini
+#pragma library dutils
 
-#if defined MAX_STRING
-#define DINI_MAX_STRING MAX_STRING
-#else
-#define DINI_MAX_STRING 255
-#endif
+#include <dutils>
 
-stock dini_Exists(filename[]) {
-	return fexist(filename);
-}
-
-stock dini_Remove(filename[]) {
-	return fremove(filename);
-}
-
-stock dini_Create(filename[]) {
-	if (fexist(filename)) return false;
-	new File:fhnd;
-	fhnd=fopen(filename,io_write);
-	if (fhnd) {
-		fclose(fhnd);
-		return true;
-	}
+stock  dini_Exists(filename[]) {
+	if (fexist(filename)) return true;
 	return false;
 }
 
-stock dini_Set(filename[],key[],value[]) {
-	// If we have no key, it can't be set
-	// we also have no chance to set the value, if all together is bigger then the max string
-	new key_length = strlen(key);
-	new value_length = strlen(value);
-	if (key_length==0 || key_length+value_length+2>DINI_MAX_STRING) return false;
-	
+stock  dini_Remove(filename[]) {
+	if (!fexist(filename)) return false;
+	fremove(filename);
+	return true;
+}
+
+stock  dini_Create(filename[]) {
+	new File:fhnd;
+	if (fexist(filename)) return false;
+	fhnd=fopen(filename,io_write);
+	fclose(fhnd);
+	return true;
+}
+
+stock  dini_PRIVATE_ExtractKey(line[]) {
+	new tmp[MAX_STRING];
+	tmp[0]=0;
+	if (strfind(line,"=",true)==-1) return tmp;
+	set(tmp,strlower(ret_memcpy(line,0,strfind(line,"=",true))));
+	return tmp;
+}
+
+stock  dini_PRIVATE_ExtractValue(line[]) {
+    new tmp[MAX_STRING];
+    tmp[0]=0;
+    if (strfind(line,"=",true)==-1) {
+        return tmp;
+    }
+    set(tmp,ret_memcpy(line,strfind(line,"=",true)+1,strlen(line)));
+    return tmp;
+}
+
+stock  dini_Set(filename[],key[],value[]) {
 	new File:fohnd, File:fwhnd;
-	new tmpres[DINI_MAX_STRING];
 	new bool:wasset=false;
-	
-	// Let's remove the old *.part file if there was one.
+	new tmpres[MAX_STRING];
+	if (key[0]==0) return false; /* If we have no sign in key, it can't be set*/
 	format(tmpres,sizeof(tmpres),"%s.part",filename);
-	fremove(tmpres);
-	
-	// We'll open the source file.
 	fohnd=fopen(filename,io_read);
 	if (!fohnd) return false;
-	
+	fremove(tmpres);
 	fwhnd=fopen(tmpres,io_write);
-	if (!fwhnd) {
-		// we can't open the second file for writing, so .. let's close the open one and exit.
-		fclose(fohnd);
-		return false;
-	}
-	
+	//  if (!fwhnd) return false;
 	while (fread(fohnd,tmpres)) {
-		if (
-			!wasset
-			&& tmpres[key_length]=='='
-			&& !strcmp(tmpres, key, true, key_length)	
-		) {
-				// We've got what needs to be replaced!
-				format(tmpres,sizeof(tmpres),"%s=%s",key,value);
-				wasset=true;
-		} else {
-			DINI_StripNewLine(tmpres);
+		StripNewLine(tmpres);
+		if ((!wasset)&&(equal(dini_PRIVATE_ExtractKey(tmpres),key,true))) {
+			/* We've got what needs to be replaced! */
+			format(tmpres,sizeof(tmpres),"%s=%s",key,value);
+			wasset=true;
 		}
 		fwrite(fwhnd,tmpres);
 		fwrite(fwhnd,"\r\n");
@@ -99,111 +92,88 @@ stock dini_Set(filename[],key[],value[]) {
 	fclose(fwhnd);
 
 	format(tmpres,sizeof(tmpres),"%s.part",filename);
-	if (DINI_fcopytextfile(tmpres,filename)) {
+	if (fcopytextfile(tmpres,filename)) {
 		return fremove(tmpres);
 	}
 	return false;
 }
 
 
-stock dini_IntSet(filename[],key[],value) {
-   new valuestring[DINI_MAX_STRING];
-   format(valuestring,DINI_MAX_STRING,"%d",value);
+stock  dini_IntSet(filename[],key[],value) {
+   new valuestring[MAX_STRING];
+   format(valuestring,sizeof(valuestring),"%d",value);
    return dini_Set(filename,key,valuestring);
 }
 
-stock dini_Int(filename[],key[]) {
+stock  dini_Int(filename[],key[]) {
    return strval(dini_Get(filename,key));
 }
 
-stock dini_FloatSet(filename[],key[],Float:value) {
-   new valuestring[DINI_MAX_STRING];
-   format(valuestring,DINI_MAX_STRING,"%f",value);
+stock  dini_FloatSet(filename[],key[],Float:value) {
+   new valuestring[MAX_STRING];
+   format(valuestring,sizeof(valuestring),"%f",value);
    return dini_Set(filename,key,valuestring);
 }
 
-stock Float:dini_Float(filename[],key[]) {
+stock  Float:dini_Float(filename[],key[]) {
    return floatstr(dini_Get(filename,key));
 }
 
-stock dini_Bool(filename[],key[]) {
+stock  dini_Bool(filename[],key[]) {
    return strval(dini_Get(filename,key));
 }
 
-stock dini_BoolSet(filename[],key[],value) {
-	if (value) {
-		return dini_Set(filename,key,"1");
-	}
-	return dini_Set(filename,key,"0");
+stock  dini_BoolSet(filename[],key[],value) {
+   new valuestring[MAX_STRING];
+   format(valuestring,sizeof(valuestring),"%d",value);
+   return dini_Set(filename,key,valuestring);
 }
 
-stock dini_Unset(filename[],key[]) {
-	// If we have no key, it can't be set
-	// we also have no chance to unset the key, if all together is bigger then the max string
-	new key_length = strlen(key);
-	if (key_length==0 || key_length+2>DINI_MAX_STRING) return false;
-	
+stock  dini_Unset(filename[],key[]) {
 	new File:fohnd, File:fwhnd;
-	new tmpres[DINI_MAX_STRING];
-	
-	// Let's remove the old *.part file if there was one.
-	format(tmpres,DINI_MAX_STRING,"%s.part",filename);
-	fremove(tmpres);
-	
-	// We'll open the source file.
+	new tmpres[MAX_STRING];
+	format(tmpres,sizeof(tmpres),"%s.part",filename);
 	fohnd=fopen(filename,io_read);
 	if (!fohnd) return false;
-	
+	fremove(tmpres);
 	fwhnd=fopen(tmpres,io_write);
-	if (!fwhnd) {
-		// we can't open the second file for writing, so .. let's close the open one and exit.
-		fclose(fohnd);
-		return false;
-	}
-	
+	//  if (!fwhnd) return false;
 	while (fread(fohnd,tmpres)) {
-		if (
-			tmpres[key_length]=='='
-			&& !strcmp(tmpres, key, true, key_length)	
-		) {
-				// We've got what needs to be removed!
+		StripNewLine(tmpres);
+		if (equal(dini_PRIVATE_ExtractKey(tmpres),key,true)) {
+			/* We've got what needs to be removed! */
 		} else {
-			DINI_StripNewLine(tmpres);
+			format(tmpres,sizeof(tmpres),"%s",tmpres);
 			fwrite(fwhnd,tmpres);
 			fwrite(fwhnd,"\r\n");
 		}
 	}
-	
+
 	fclose(fohnd);
 	fclose(fwhnd);
 
-	format(tmpres,DINI_MAX_STRING,"%s.part",filename);
-	if (DINI_fcopytextfile(tmpres,filename)) {
+	format(tmpres,sizeof(tmpres),"%s.part",filename);
+	if (fcopytextfile(tmpres,filename)) {
 		return fremove(tmpres);
 	}
 	return false;
 }
 
-stock dini_Get(filename[],key[]) {
-	new tmpres[DINI_MAX_STRING];
-	
-	new key_length = strlen(key);
-	if (key_length==0 || key_length+2>DINI_MAX_STRING) return tmpres;
-	
+stock  dini_Get(filename[],key[]) {
 	new File:fohnd;
+	new tmpres[MAX_STRING];
+	new tmpres2[MAX_STRING];
+	tmpres[0]=0;
 	fohnd=fopen(filename,io_read);
 	if (!fohnd) return tmpres;
-	
 	while (fread(fohnd,tmpres)) {
-		if (
-			tmpres[key_length]=='='
-			&& !strcmp(tmpres, key, true, key_length)	
-		) {
+		StripNewLine(tmpres);
+		if (equal(dini_PRIVATE_ExtractKey(tmpres),key,true)) {
 			/* We've got what we need */
-			DINI_StripNewLine(tmpres);
-			strmid(tmpres, tmpres, key_length + 1, strlen(tmpres), DINI_MAX_STRING);
+			tmpres2[0]=0;
+			strcat(tmpres2,dini_PRIVATE_ExtractValue(tmpres));
 			fclose(fohnd);
-			return tmpres;
+			return tmpres2;
 		}
 	}
 	fclose(fohnd);
@@ -211,58 +181,19 @@ stock dini_Get(filename[],key[]) {
 }
 
 
-stock dini_Isset(filename[],key[]) {
-	new key_length = strlen(key);
-	if (key_length==0 || key_length+2>DINI_MAX_STRING) return false;
-	
+stock  dini_Isset(filename[],key[]) {
 	new File:fohnd;
+	new tmpres[MAX_STRING];
 	fohnd=fopen(filename,io_read);
 	if (!fohnd) return false;
-	
-	new tmpres[DINI_MAX_STRING];
 	while (fread(fohnd,tmpres)) {
-		if (
-				tmpres[key_length]=='='
-			&&  !strcmp(tmpres, key, true, key_length)	
-		) {
-			// We've got what we need
+		StripNewLine(tmpres);
+		if (equal(dini_PRIVATE_ExtractKey(tmpres),key,true)) {
+			/* We've got what we need */
 			fclose(fohnd);
 			return true;
 		}
 	}
 	fclose(fohnd);
 	return false;
-}
-
-
-
-stock DINI_StripNewLine(string[]) {
-	new len = strlen(string);
-	if (string[0]==0) return ;
-	if ((string[len - 1] == '\n') || (string[len - 1] == '\r')) {
-		string[len - 1] = 0;
-		if (string[0]==0) return ;
-		if ((string[len - 2] == '\n') || (string[len - 2] == '\r')) string[len - 2] = 0;
-	}
-}
-
-stock DINI_fcopytextfile(oldname[],newname[]) {
-	new File:ohnd,File:nhnd;
-	if (!fexist(oldname)) return false;
-	ohnd=fopen(oldname,io_read);
-	if (!ohnd) return false;
-	nhnd=fopen(newname,io_write);
-	if (!nhnd) {
-		fclose(ohnd);
-		return false;
-	}
-	new tmpres[DINI_MAX_STRING];
-	while (fread(ohnd,tmpres)) {
-		DINI_StripNewLine(tmpres);
-		format(tmpres,sizeof(tmpres),"%s\r\n",tmpres);
-		fwrite(nhnd,tmpres);
-	}
-	fclose(ohnd);
-	fclose(nhnd);
-	return true;
 }

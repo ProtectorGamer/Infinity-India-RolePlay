@@ -2135,8 +2135,8 @@ public OnPlayerConnect(playerid)
 	}
 
 	SetPlayerTeam(playerid, 0xFE);
-	//FreezeSyncData(playerid, false);
-	//SetFakeFacingAngle(playerid, _);
+	FreezeSyncData(playerid, false);
+	SetFakeFacingAngle(playerid, _);
 	DamageFeedUpdate(playerid);
 
 	#if WC_CUSTOM_VENDING_MACHINES
@@ -2334,8 +2334,8 @@ public OnPlayerSpawn(playerid)
 
 	UpdatePlayerVirtualWorld(playerid);
 	UpdateHealthBar(playerid, true);
-	//FreezeSyncData(playerid, false);
-	//SetFakeFacingAngle(playerid, _);
+	FreezeSyncData(playerid, false);
+	SetFakeFacingAngle(playerid, _);
 	DamageFeedUpdate(playerid);
 
 	if (GetPlayerTeam(playerid) != 0xFE) {
@@ -2406,7 +2406,7 @@ public OnPlayerRequestClass(playerid, classid)
 		s_IsDying[playerid] = false;
 	}
 
-	//FreezeSyncData(playerid, false);
+	FreezeSyncData(playerid, false);
 	UpdatePlayerVirtualWorld(playerid);
 
 	if (s_TrueDeath[playerid]) {
@@ -2595,7 +2595,7 @@ static Float:AngleBetweenPoints(Float:x1, Float:y1, Float:x2, Float:y2);
 
 forward WC_CbugPunishment(playerid, weapon);
 public WC_CbugPunishment(playerid, weapon) {
-	//FreezeSyncData(playerid, false);
+	FreezeSyncData(playerid, false);
 	ClearAnimations(playerid, 1);
 	GivePlayerWeapon(playerid, weapon, 0);
 }
@@ -2624,7 +2624,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 				ClearAnimations(playerid, 1);
 				ApplyAnimation(playerid, "PED", "IDLE_stance", 4.1, 1, 0, 0, 0, 0, 1);
-				//FreezeSyncData(playerid, true);
+				FreezeSyncData(playerid, true);
 				GivePlayerWeapon(playerid, w, 0);
 				SetTimerEx("WC_CbugPunishment", 600, false, "ii", playerid, GetPlayerWeapon(playerid));
 
@@ -2650,8 +2650,8 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 								KillTimer(s_DelayedDeathTimer[i]);
 								s_DelayedDeathTimer[i] = -1;
 								ClearAnimations(i, 1);
-								//SetFakeFacingAngle(i, _);
-								//FreezeSyncData(i, false);
+								SetFakeFacingAngle(i, _);
+								FreezeSyncData(i, false);
 
 								s_IsDying[i] = false;
 
@@ -2746,7 +2746,7 @@ public OnPlayerStreamIn(playerid, forplayerid)
 {
 	// Send ped floor_hit_f
 	if (s_IsDying[playerid]) {
-		//SendLastSyncData(playerid, forplayerid, 0x2e040000 + 1150);
+		SendLastSyncData(playerid, forplayerid, 0x2e040000 + 1150);
 	}
 
 	#if defined WC_OnPlayerStreamIn
@@ -2813,8 +2813,8 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 			if (vx*vx + vy*vy + vz*vz <= 0.05) {
 				for (new i = 0; i < MAX_PLAYERS; i++) {
 					if (i != playerid && IsPlayerConnected(i) && IsPlayerStreamedIn(playerid, i)) {
-						//SendLastSyncData(playerid, i);
-					//	ClearAnimationsForPlayer(playerid, i);
+						SendLastSyncData(playerid, i);
+						ClearAnimationsForPlayer(playerid, i);
 					}
 				}
 			}
@@ -3772,13 +3772,13 @@ static ScriptInit()
 {
 	s_LagCompMode = GetServerVarAsInt("lagcompmode");
 
-/*	if (s_LagCompMode) {
-	//	SetKnifeSync(false);
+	if (s_LagCompMode) {
+		SetKnifeSync(false);
 	} else {
 		s_DamageTakenSound = 0;
 		SetKnifeSync(true);
 	}
-*/
+
 	for (new i = 0; i < sizeof(s_ClassSpawnInfo); i++) {
 		s_ClassSpawnInfo[i][e_Skin] = -1;
 	}
@@ -3883,7 +3883,7 @@ static ScriptInit()
 
 static ScriptExit()
 {
-//	SetKnifeSync(true);
+	SetKnifeSync(true);
 
 	#if WC_CUSTOM_VENDING_MACHINES
 		DestroyVendingMachines();
@@ -3915,10 +3915,10 @@ static ScriptExit()
 			SetPlayerArmour(playerid, s_PlayerArmour[playerid]);
 		}
 
-		//SetFakeHealth(playerid, 255);
-	//	SetFakeArmour(playerid, 255);
-		//FreezeSyncData(playerid, false);
-		//SetFakeFacingAngle(playerid, _);
+		SetFakeHealth(playerid, 255);
+		SetFakeArmour(playerid, 255);
+		FreezeSyncData(playerid, false);
+		SetFakeFacingAngle(playerid, _);
 		SetHealthBarVisible(playerid, false);
 
 		if (s_HealthBarForeground[playerid] != PlayerText:INVALID_TEXT_DRAW) {
@@ -4009,8 +4009,8 @@ static UpdateHealthBar(playerid, bool:force = false)
 		return;
 	}
 
-//	SetFakeHealth(playerid, health);
-//	SetFakeArmour(playerid, armour);
+	SetFakeHealth(playerid, health);
+	SetFakeArmour(playerid, armour);
 
 	UpdateSyncData(playerid);
 
@@ -4130,7 +4130,7 @@ static UpdateSyncData(playerid)
 
 	for (new i = 0; i < MAX_PLAYERS; i++) {
 		if (i != playerid && IsPlayerConnected(i) && IsPlayerStreamedIn(playerid, i)) {
-			//SendLastSyncData(playerid, i);
+			SendLastSyncData(playerid, i);
 		}
 	}
 }
@@ -4241,12 +4241,12 @@ public WC_SpawnForStreamedIn(playerid)
 		return;
 	}
 
-	//spawnplayerforworld(playerid);
+	SpawnPlayerForWorld(playerid);
 
 	for (new i = 0; i < MAX_PLAYERS; i++) {
 		if (i != playerid && IsPlayerConnected(i) && IsPlayerStreamedIn(playerid, i)) {
-			//SendLastSyncData(playerid, i);
-			//ClearAnimationsForPlayer(playerid, i);
+			SendLastSyncData(playerid, i);
+			ClearAnimationsForPlayer(playerid, i);
 		}
 	}
 }
@@ -4797,7 +4797,7 @@ static PlayerDeath(playerid, animlib[32], animname[32], anim_lock = 0, respawn_t
 	OnPlayerPrepareDeath(playerid, animlib, animname, anim_lock, respawn_time);
 
 	UpdateHealthBar(playerid);
-	//FreezeSyncData(playerid, freeze_sync);
+	FreezeSyncData(playerid, freeze_sync);
 
 	if (respawn_time == -1) {
 		respawn_time = s_RespawnTime;
@@ -5269,7 +5269,7 @@ static MakePlayerFacePlayer(playerid, targetid, opposite = false, forcesync = tr
 	SetPlayerFacingAngle(playerid, angle);
 
 	if (forcesync) {
-		//SetFakeFacingAngle(playerid, angle);
+		SetFakeFacingAngle(playerid, angle);
 		UpdateSyncData(playerid);
 	}
 }
@@ -5352,8 +5352,8 @@ public WC_PlayerDeathRespawn(playerid)
 
 	if (!OnPlayerDeathFinished(playerid, true)) {
 		UpdateHealthBar(playerid);
-		//SetFakeFacingAngle(playerid, _);
-		//FreezeSyncData(playerid, false);
+		SetFakeFacingAngle(playerid, _);
+		FreezeSyncData(playerid, false);
 
 		return;
 	}
@@ -5368,7 +5368,7 @@ public WC_PlayerDeathRespawn(playerid)
 	}
 
 	SetPlayerVirtualWorld(playerid, WC_DEATH_WORLD);
-	//SetFakeFacingAngle(playerid, _);
+	SetFakeFacingAngle(playerid, _);
 	TogglePlayerSpectating(playerid, true);
 	TogglePlayerSpectating(playerid, false);
 }
