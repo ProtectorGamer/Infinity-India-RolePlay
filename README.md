@@ -3,4 +3,4 @@
 # All updates are available.
 # https://discord.gg/9MgJXXDd5S (If you want help)
 # Casawii RolePlay is the base script
-# [TPG]Protector#3155 to contact for script support
+# tpgprotector (Discord) to contact for script support
