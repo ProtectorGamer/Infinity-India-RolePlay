@@ -55,7 +55,7 @@ ________________________________________________________________________________
 #define _included_discord_command
 
 #if !defined DCMD_PREFIX
-	#define DCMD_PREFIX '!'
+	#define DCMD_PREFIX 'iirp!'
 #endif
 
 

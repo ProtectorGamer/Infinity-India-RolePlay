@@ -1,0 +1,174 @@
+[16:15:00 02/15/24] [WARNING] CMySQLHandle::Create - connection already exists
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:00 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:12 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Cypher_Singh' AND password = 'B6B06441B279D62A88523DBEBA42FEE28BF68F6CAC9DAF4203E807D88706B6B6CDC3FF4CB8B71045AA4E7826589EAAFB330555B49BDE060AD4477DAD5D0356F9'")
+[16:15:12 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:12 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:12 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Cypher_Singh' AND password = 'B6B06441B279D62A88523DBEBA42FEE28BF68F6CAC9DAF4203E807D88706B6B6CDC3FF4CB8B71045AA4E7826589EAAFB330555B49BDE060AD4477DAD5D0356F9'")
+[16:15:12 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Dexter_Bhau' AND password = 'D3CEEF7D009D56EFD9A76A47E097DB26C86C52ED208A93A00E79B2E9AD26F5F14851025F130BEA81F07FC52C7E6B7326A4CBC6F71B33FA9BCB9BCDD9396066D3'")
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Dexter_Bhau' AND password = 'D3CEEF7D009D56EFD9A76A47E097DB26C86C52ED208A93A00E79B2E9AD26F5F14851025F130BEA81F07FC52C7E6B7326A4CBC6F71B33FA9BCB9BCDD9396066D3'")
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'ELVISH_YADAV' AND password = '4852DB94117FCBF83AFE908752A09714AB40F4A21136078B9D438B529CD7E4E03E713330AA1372E2BC835B4C3FBE4932DE9EDE73D3BAABDE6767AE3566DAD865'")
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:13 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'ELVISH_YADAV' AND password = '4852DB94117FCBF83AFE908752A09714AB40F4A21136078B9D438B529CD7E4E03E713330AA1372E2BC835B4C3FBE4932DE9EDE73D3BAABDE6767AE3566DAD865'")
+[16:15:13 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:19 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:19 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:19 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:19 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:19 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:19 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Vedant_Clinton' AND password = 'E66B0D17B3851D47E1BC93F702137FDBEB2E863403930DCA8E904CE870AAD0B21559CB64C0B81C9F3C07B50FAB72B5601585B8C0C80EDB8AC29A6A129BD74F60'")
+[16:15:19 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:19 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'arjun_raii' AND password = '257723CD71041E7241E667573A15E910B5654F03E576409C5D9D707C00830A3AA970B118F3C6A7CD0B815ACED9CEA9E9CB9EC77A67C3C43F2FCDB82EF6F0FF2E'")
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:28 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'arjun_raii' AND password = '257723CD71041E7241E667573A15E910B5654F03E576409C5D9D707C00830A3AA970B118F3C6A7CD0B815ACED9CEA9E9CB9EC77A67C3C43F2FCDB82EF6F0FF2E'")
+[16:15:28 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Sunny_Leone' AND password = '1B49AEED3121FD6D95CF0725C407A9579DFFBD807D2697B145AE93F70B34E64C3E0E8DACABF8D0550EE199103C4EC5ABEC4F2EC579F36B1C1D4282A2FBA82E30'")
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:33 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Sunny_Leone' AND password = '1B49AEED3121FD6D95CF0725C407A9579DFFBD807D2697B145AE93F70B34E64C3E0E8DACABF8D0550EE199103C4EC5ABEC4F2EC579F36B1C1D4282A2FBA82E30'")
+[16:15:33 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:39 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:15:46 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:15:46 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:15:46 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:15:46 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:15:46 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:15:46 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:15:46 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:15:46 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:15:46 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 33, scrap = 32, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:15:46 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 1, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:15:46 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 11, scrap = 19, vehpart = 1, advkit = 0, gunpart = 0 where uid = ")
+[16:15:46 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Sam_Rias' AND password = 'BD39F6DB53DE8C442A956662C1C54157616266DD93FAF30EB7555981822D5DC5E1C24CE31FB143E2290072CB37B4FA1532E9630D94173C1E1B4022990DAA2901'")
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Sam_Rias' AND password = 'BD39F6DB53DE8C442A956662C1C54157616266DD93FAF30EB7555981822D5DC5E1C24CE31FB143E2290072CB37B4FA1532E9630D94173C1E1B4022990DAA2901'")
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Tiger_mastan' AND password = 'C3E5007AC82008B36862AB3AAC304A129FFE7ECDA2B35C69313927897EDABB89F9A54C756082B604DF191A9E5C89070F9B50B3809D95148E1F888C2B8808331C'")
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:01 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Tiger_mastan' AND password = 'C3E5007AC82008B36862AB3AAC304A129FFE7ECDA2B35C69313927897EDABB89F9A54C756082B604DF191A9E5C89070F9B50B3809D95148E1F888C2B8808331C'")
+[16:16:01 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:20 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:20 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Pushpa_Raj' AND password = '6D2607D56DE5576A227CFE7120E125BE836314F4569475B49DA1BB23AEB40D6F49EF5F1884F94595BAE49CCED30CCAB8F6BE06C28173945C64F67ED25B9665C2'")
+[16:16:20 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:20 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:20 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Pushpa_Raj' AND password = '6D2607D56DE5576A227CFE7120E125BE836314F4569475B49DA1BB23AEB40D6F49EF5F1884F94595BAE49CCED30CCAB8F6BE06C28173945C64F67ED25B9665C2'")
+[16:16:20 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:22 02/15/24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("joblimit") (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Shrey_Shine' AND password = '53E75B7D9C59B6D9099A095AD3AF516C146F69315564D152ECD88E0C4C0CD281E0596AC7431D6BE454CD735C80D22AE05483FFAC6F97D82CE80B0542D1D23CCB'")
+[16:16:22 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:22 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:22 02/15/24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10') (Query: "SELECT *, DATE_FORMAT(lastlogin, '%D of %M, %Y @ %k:%i') AS login_date FROM users WHERE username = 'Shrey_Shine' AND password = '53E75B7D9C59B6D9099A095AD3AF516C146F69315564D152ECD88E0C4C0CD281E0596AC7431D6BE454CD735C80D22AE05483FFAC6F97D82CE80B0542D1D23CCB'")
+[16:16:22 02/15/24] [ERROR] cache_get_field_content_int - invalid datatype
+[16:16:23 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE uid = 35' at line 1 (Query: "UPDATE users SET buygun = 0, bgtime = 0, WHERE uid = 35")
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 33, scrap = 32, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 1, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 9, scrap = 12, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 11, scrap = 19, vehpart = 1, advkit = 0, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 125, scrap = 36, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 19, scrap = 7, vehpart = 0, advkit = 2, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:16:33 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] mysql_format - no value for specifier "%d" available
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 33, scrap = 32, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 1, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 9, scrap = 12, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 11, scrap = 19, vehpart = 1, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 125, scrap = 36, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 19, scrap = 7, vehpart = 0, advkit = 2, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
+[16:17:19 02/15/24] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (Query: "UPDATE users SET steel = 0, scrap = 0, vehpart = 0, advkit = 0, gunpart = 0 where uid = ")
