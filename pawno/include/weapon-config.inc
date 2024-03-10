@@ -315,7 +315,7 @@ static const s_ValidDamageGiven[] = {
 	1, // 6 - Shovel
 	1, // 7 - Pool cue
 	1, // 8 - Katana
-	1, // 9 - Chainsaw
+	0, // 9 - Chainsaw
 	1, // 10 - Dildo
 	1, // 11 - Dildo 2
 	1, // 12 - Vibrator
@@ -428,7 +428,7 @@ static Float:s_WeaponDamage[] = {
 	1.0, // 6 - Shovel
 	1.0, // 7 - Pool cue
 	1.0, // 8 - Katana
-	1.0, // 9 - Chainsaw
+	0.0, // 9 - Chainsaw
 	1.0, // 10 - Dildo
 	1.0, // 11 - Dildo 2
 	1.0, // 12 - Vibrator
@@ -441,7 +441,7 @@ static Float:s_WeaponDamage[] = {
 	9.9, // 19 - Vehicle M4 (custom)
 	46.2, // 20 - Vehicle minigun (custom)
 	0.0, // 21
-	8.25, // 22 - Colt 45
+	4.25, // 22 - Colt 45
 	13.2, // 23 - Silenced
 	46.2, // 24 - Deagle
 	3.3, // 25 - Shotgun

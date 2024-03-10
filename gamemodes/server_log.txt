@@ -1,0 +1,208 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:14:48] mapname = "San Andreas"  (string)
+[16:14:48] password = ""  (string)
+[16:14:48] 
+[16:14:48] Server Plugins
+[16:14:48] --------------
+[16:14:48]  Loading plugin: crashdetect.so
+[16:14:48]   CrashDetect plugin 4.19.4
+[16:14:48]   Loaded.
+[16:14:48]  Loading plugin: discord-connector.so
+[16:14:52]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: whirlpool.so
+[16:14:52]  
+[16:14:52]  ==================
+[16:14:52]  
+[16:14:52]   Whirlpool loaded
+[16:14:52]  
+[16:14:52]  ==================
+[16:14:52]  
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: pawncmd.so
+[16:14:52] Pawn.CMD plugin v3.2.0 by urShadow has been loaded
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: sscanf.so
+[16:14:52] 
+
+[16:14:52]  ===============================
+
+[16:14:52]       sscanf plugin loaded.     
+
+[16:14:52]          Version:  2.8.3        
+
+[16:14:52]   (c) 2018 Alex "Y_Less" Cole  
+
+[16:14:52]  ===============================
+
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: streamer.so
+[16:14:52] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: mysql.so
+[16:14:52]  >> plugin.mysql: R39-6 successfully loaded.
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: sampvoice3.so
+[16:14:52] [sv:dbg:network:init] : module initializing...
+[16:14:52] [dbg:raknet:init] : module initializing...
+[16:14:52] [dbg:raknet:init] : installed hook to 'GetRakServerInterface' function (ptr:0x806ca30)
+[16:14:52] [dbg:raknet:init] : installed hook to 'OnPlayerDisconnect' function (ptr:0x80a51d0)
+[16:14:52] [dbg:raknet:init] : module initialized
+[16:14:52] [sv:dbg:network:init] : module initialized
+[16:14:52]  -------------------------------------------    
+[16:14:52]    ___                __   __    _              
+[16:14:52]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[16:14:52]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[16:14:52]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[16:14:52]                   |_|                           
+[16:14:52]  -------------------------------------------    
+[16:14:52]            SampVoice by MOR loaded              
+[16:14:52]  -------------------------------------------    
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: nativechecker.so
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: SKY.so
+[16:14:52]   Loaded.
+[16:14:52]  Loading plugin: ColAndreas.so
+[16:14:52]   Failed (plugins/ColAndreas.so: cannot open shared object file: No such file or directory)
+[16:14:52]  Loaded 10 plugins.
+
+[16:14:52] 
+[16:14:52] Ban list
+[16:14:52] --------
+[16:14:52]  Loaded: samp.ban
+[16:14:52] 
+[16:14:52] 
+[16:14:52] Filterscripts
+[16:14:52] ---------------
+[16:14:52]   Loading filterscript 'android-check.amx'...
+[16:14:52] AMX (168295088) loaded
+[16:14:52] [sv:dbg:main:AmxLoad] : net game pointer (value:0x9e8b2a0) received
+[16:14:52] [sv:dbg:network:bind] : voice server running on port 58335
+[16:14:52] Android check has been successfully loaded.
+[16:14:52]   Loading filterscript 'radio.amx'...
+[16:14:52] AMX (168388016) loaded
+[16:14:52] [sv:dbg:main:AmxLoad] : failed to bind voice server
+[16:14:52]   Loaded 2 filterscripts.
+
+[16:14:52] AMX (166185360) loaded
+[16:14:52] [sv:dbg:main:AmxLoad] : failed to bind voice server
+[16:14:52]    Error: Function not registered: 'FreezeSyncData'
+[16:14:52]    Error: Function not registered: 'SetFakeFacingAngle'
+[16:14:52]    Error: Function not registered: 'SendLastSyncData'
+[16:14:52]    Error: Function not registered: 'ClearAnimationsForPlayer'
+[16:14:52]    Error: Function not registered: 'SetKnifeSync'
+[16:14:52]    Error: Function not registered: 'SetFakeHealth'
+[16:14:52]    Error: Function not registered: 'SetFakeArmour'
+[16:14:52]    Error: Function not registered: 'PlayerTextDrawSetPosition'
+[16:14:52]    Error: Function not registered: 'SpawnPlayerForWorld'
+[16:14:52]  
+[16:14:52]  
+[16:14:52]  
+[16:14:52]  ======================================= 
+[16:14:52]  |                                     | 
+[16:14:52]  |        YSI version 4.00.0001        | 
+[16:14:52]  |        By Alex "Y_Less" Cole        | 
+[16:14:52]  |                                     | 
+[16:14:52]  ======================================= 
+[16:14:52]  
+[16:14:57] [connection] 223.178.115.92:56394 requests connection cookie.
+[16:14:58] [connection] 157.41.248.154:42214 requests connection cookie.
+[16:14:59] [connection] 106.211.44.247:61652 requests connection cookie.
+[16:14:59] [connection] 152.58.61.6:49591 requests connection cookie.
+[16:15:00] [connection] 103.50.76.42:44140 requests connection cookie.
+[16:15:00] [connection] 47.31.136.60:58235 requests connection cookie.
+[16:15:00] MapFix by Nexius v4.2.1 loaded (include version).
+[16:15:00] -> Boxing System - By: Protector
+[16:15:00] ..::Infinity India Roleplay::..
+[16:15:00] 663 objects loaded.
+[16:15:00]  
+[16:15:00] -------------------------------------------
+[16:15:00] Loading...
+[16:15:00] Infinity India Roleplay (2024)
+[16:15:00] -------------------------------------------
+[16:15:00]  
+[16:15:00] Number of vehicle models: 4
+[16:15:00] [connection] incoming connection: 223.178.115.92:56394 id: 0
+[16:15:00] [sv:dbg:network:connect] : connecting player (0) with address (223.178.115.92) ...
+[16:15:00] [sv:dbg:network:connect] : player (0) assigned key (5c73b2dfe494f2d6)
+[16:15:00] [join] Vedant_Clinton has joined the server (0:223.178.115.92)
+[16:15:00] [connection] incoming connection: 157.41.248.154:42214 id: 1
+[16:15:00] [sv:dbg:network:connect] : connecting player (1) with address (157.41.248.154) ...
+[16:15:00] [sv:dbg:network:connect] : player (1) assigned key (9af8299d6bc70a07)
+[16:15:00] [join] ELVISH_YADAV has joined the server (1:157.41.248.154)
+[16:15:00] [connection] incoming connection: 152.58.61.6:49591 id: 2
+[16:15:00] [connection] incoming connection: 103.50.76.42:44140 id: 3
+[16:15:00] [connection] incoming connection: 106.211.44.247:61652 id: 4
+[16:15:00] [connection] incoming connection: 47.31.136.60:58235 id: 5
+[16:15:00] [Script] 36 houses loaded.
+[16:15:00] [Script] 5 garages loaded.
+[16:15:00] [Script] 12 businesses loaded.
+[16:15:00] [Script] 126 entrances loaded.
+[16:15:00] [Script] 6 factions loaded.
+[16:15:00] [Script] 9 lands loaded.
+[16:15:00] [Script] 3 gangs loaded.
+[16:15:00] [Script] 0 points loaded.
+[16:15:00] [Script] 14 turfs loaded.
+[16:15:00] [Script] StockMarket loaded.
+[16:15:00] [LOADED] 1 laboratories
+[16:15:00] [sv:dbg:network:connect] : connecting player (3) with address (103.50.76.42) ...
+[16:15:00] [sv:dbg:network:connect] : player (3) assigned key (2a4c32676cbcba8f)
+[16:15:00] [join] Dexter_Bhau has joined the server (3:103.50.76.42)
+[16:15:00] [join] shivay_ji has joined the server (4:106.211.44.247)
+[16:15:01] [sv:dbg:network:connect] : connecting player (5) with address (47.31.136.60) ...
+[16:15:01] [sv:dbg:network:connect] : player (5) assigned key (3c881f2f07ae702a)
+[16:15:01] [join] Cypher_Singh has joined the server (5:47.31.136.60)
+[16:15:01] [sv:dbg:network:connect] : connecting player (2) with address (152.58.61.6) ...
+[16:15:01] [sv:dbg:network:connect] : player (2) assigned key (63d3a982d844383)
+[16:15:01] [join] Kayro_dsouza has joined the server (2:152.58.61.6)
+[16:15:01] [connection] 202.47.43.119:49651 requests connection cookie.
+[16:15:02] [connection] incoming connection: 202.47.43.119:49651 id: 6
+[16:15:03] [sv:dbg:network:connect] : connecting player (6) with address (202.47.43.119) ...
+[16:15:03] [sv:dbg:network:connect] : player (6) assigned key (772b2fca74f5cda8)
+[16:15:03] [join] Arthur_Valentino has joined the server (6:202.47.43.119)
+[16:15:04] [sv:dbg:network:receive] : player (6) identified (port:49529)
+[16:15:08] [connection] 49.43.43.202:34856 requests connection cookie.
+[16:15:08] [connection] incoming connection: 49.43.43.202:34856 id: 7
+[16:15:09] [sv:dbg:network:connect] : connecting player (7) with address (49.43.43.202) ...
+[16:15:09] [sv:dbg:network:connect] : player (7) assigned key (ca2b2b315dc6449f)
+[16:15:09] [join] Pushpa_Raj has joined the server (7:49.43.43.202)
+[16:15:12] [connection] 103.174.168.152:2769 requests connection cookie.
+[16:15:12] [sv:dbg:network:connect] : disconnecting player (2) ...
+[16:15:12] [part] Kayro_dsouza has left the server (2:0)
+[16:15:12] [connection] incoming connection: 103.174.168.152:2769 id: 2
+[16:15:13] [sv:dbg:network:connect] : connecting player (2) with address (103.174.168.152) ...
+[16:15:13] [sv:dbg:network:connect] : player (2) assigned key (98a8ae67ebb620e4)
+[16:15:13] [join] arjun_raii has joined the server (2:103.174.168.152)
+[16:15:13] [sv:dbg:network:receive] : player (2) identified (port:2770)
+[16:15:14] [connection] 89.211.214.89:47462 requests connection cookie.
+[16:15:14] [connection] 89.211.214.89:47462 requests connection cookie.
+[16:15:14] [connection] 89.211.214.89:47462 requests connection cookie.
+[16:15:14] [connection] incoming connection: 89.211.214.89:47462 id: 8
+[16:15:14] [warning] dropping a split packet from client
+[16:15:15] [sv:dbg:network:connect] : connecting player (8) with address (89.211.214.89) ...
+[16:15:15] [sv:dbg:network:connect] : player (8) assigned key (59d6d3592645def7)
+[16:15:15] [join] Sam_Rias has joined the server (8:89.211.214.89)
+[16:15:15] [sv:dbg:network:receive] : player (8) identified (port:57140)
+[16:15:20] [connection] 152.58.134.177:41442 requests connection cookie.
+[16:15:20] [cmd] ELVISH YADAV: [b]
+[16:15:21] [connection] incoming connection: 152.58.134.177:41442 id: 9
+[16:15:22] [sv:dbg:network:connect] : connecting player (9) with address (152.58.134.177) ...
+[16:15:22] [sv:dbg:network:connect] : player (9) assigned key (b1863a983ad81c0b)
+[16:15:22] [join] Sunny_Leone has joined the server (9:152.58.134.177)
+[16:15:22] [sv:dbg:network:receive] : player (9) identified (port:51225)
+[16:15:23] [chat] [Cypher_Singh]: 1 stele 300 ka buy karta ho
+[16:15:26] [cmd] Dexter Bhau: [b]
+[16:15:28] [sv:dbg:network:connect] : disconnecting player (7) ...
+[16:15:28] [part] Pushpa_Raj has left the server (7:0)

@@ -130,7 +130,7 @@ public OnPlayerUpdate(playerid)
 	return 1;
 }
 
-CMD:dpr(playerid, params[])
+/*CMD:dpr(playerid, params[])
 {
         if(PlayerInfo[playerid][pVoiceRadio] == 0)
 	    {
@@ -201,4 +201,4 @@ CMD:svc(playerid, params[])
 	SCM(playerid, COLOR_GREEN, "You are now in Load Voice Mode .");
 	return 1;
 }
-
+*/

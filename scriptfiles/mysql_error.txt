@@ -1567,3 +1567,627 @@ Callback: OnPlayerUseCarStorage
 Query: SELECT id FROM vehicles WHERE ownerid = 603 LIMIT -1, 1
 [!] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1, 1' at line 1
 
+[2023-07-11 10:26]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET setup = 0, firstspawn = 0 WHERE uid = 1
+[!] Unknown column 'firstspawn' in 'field list'
+
+[2023-07-11 10:26]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 25, thirst = 100, thirsttimer = 25, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-07-11 10:27]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 70, thirst = 100, thirsttimer = 70, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-07-11 10:27]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 115, thirst = 100, thirsttimer = 115, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-07-11 10:28]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 159, thirst = 99, thirsttimer = 39, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-07-11 10:29]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 99, hungertimer = 24, thirst = 99, thirsttimer = 84, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-07-11 10:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 99, hungertimer = 69, thirst = 98, thirsttimer = 9, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-07-11 10:31]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 99, hungertimer = 113, thirst = 98, thirsttimer = 53, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-07-11 10:31]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 99, hungertimer = 158, thirst = 98, thirsttimer = 98, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-07-11 10:32]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 23, thirst = 97, thirsttimer = 23, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 1
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:28]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET setup = 0, firstspawn = 0 WHERE uid = 9
+[!] Unknown column 'firstspawn' in 'field list'
+
+[2023-12-13 15:28]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 13, thirst = 100, thirsttimer = 13, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 9
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:29]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 58, thirst = 100, thirsttimer = 58, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 9
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 103, thirst = 100, thirsttimer = 103, Lottery = 0, LotteryB = 0, comserv = 0, INP = 0, INC = 0, slayerpussy = 0 where uid = 9
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:49]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 42, hungertimer = 84, thirst = 18, thirsttimer = 85, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:50]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 42, hungertimer = 129, thirst = 17, thirsttimer = 10, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:50]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 42, hungertimer = 173, thirst = 17, thirsttimer = 54, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:51]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 38, thirst = 17, thirsttimer = 99, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:52]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 83, thirst = 16, thirsttimer = 24, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:53]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 127, thirst = 16, thirsttimer = 68, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:53]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 172, thirst = 16, thirsttimer = 113, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:54]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 40, hungertimer = 37, thirst = 15, thirsttimer = 38, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:55]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 40, hungertimer = 82, thirst = 15, thirsttimer = 83, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:56]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 40, hungertimer = 126, thirst = 14, thirsttimer = 7, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:57]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 40, hungertimer = 171, thirst = 14, thirsttimer = 52, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:57]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 39, hungertimer = 36, thirst = 14, thirsttimer = 97, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:58]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 39, hungertimer = 80, thirst = 13, thirsttimer = 21, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 15:59]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 39, hungertimer = 120, thirst = 13, thirsttimer = 61, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 16:02]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 42, hungertimer = 109, thirst = 18, thirsttimer = 110, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 16:03]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 42, hungertimer = 154, thirst = 17, thirsttimer = 35, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 16:04]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 19, thirst = 17, thirsttimer = 80, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 16:04]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 62, thirst = 16, thirsttimer = 3, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 21:57]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 42, hungertimer = 93, thirst = 18, thirsttimer = 94, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 21:57]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 42, hungertimer = 138, thirst = 17, thirsttimer = 19, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 21:58]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 3, thirst = 17, thirsttimer = 64, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 21:59]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 48, thirst = 17, thirsttimer = 109, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:00]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 93, thirst = 16, thirsttimer = 34, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 41, hungertimer = 138, thirst = 16, thirsttimer = 79, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 40, hungertimer = 3, thirst = 15, thirsttimer = 4, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:02]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 40, hungertimer = 47, thirst = 15, thirsttimer = 48, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:03]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 40, hungertimer = 92, thirst = 15, thirsttimer = 93, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:04]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 40, hungertimer = 137, thirst = 14, thirsttimer = 18, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:04]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 39, hungertimer = 1, thirst = 14, thirsttimer = 62, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:05]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 39, hungertimer = 46, thirst = 14, thirsttimer = 107, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:06]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 39, hungertimer = 91, thirst = 13, thirsttimer = 32, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:07]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 39, hungertimer = 136, thirst = 13, thirsttimer = 77, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:08]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 38, hungertimer = 0, thirst = 12, thirsttimer = 1, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:08]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 38, hungertimer = 45, thirst = 12, thirsttimer = 46, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:09]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 38, hungertimer = 90, thirst = 12, thirsttimer = 91, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:10]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 38, hungertimer = 134, thirst = 11, thirsttimer = 15, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:11]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 38, hungertimer = 179, thirst = 11, thirsttimer = 60, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:11]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 37, hungertimer = 44, thirst = 11, thirsttimer = 105, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:12]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 37, hungertimer = 89, thirst = 10, thirsttimer = 30, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:13]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 37, hungertimer = 133, thirst = 10, thirsttimer = 74, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:14]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 37, hungertimer = 178, thirst = 10, thirsttimer = 119, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:14]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 36, hungertimer = 43, thirst = 9, thirsttimer = 44, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:15]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 36, hungertimer = 87, thirst = 9, thirsttimer = 88, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 36, hungertimer = 132, thirst = 8, thirsttimer = 13, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:17]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 36, hungertimer = 177, thirst = 8, thirsttimer = 58, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:18]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 35, hungertimer = 42, thirst = 8, thirsttimer = 103, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:18]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 35, hungertimer = 86, thirst = 7, thirsttimer = 27, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:19]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 131, thirst = 100, thirsttimer = 72, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:20]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 100, hungertimer = 176, thirst = 100, thirsttimer = 117, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:21]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 99, hungertimer = 41, thirst = 99, thirsttimer = 42, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:21]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 99, hungertimer = 85, thirst = 99, thirsttimer = 86, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:22]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 99, hungertimer = 130, thirst = 98, thirsttimer = 11, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:23]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 99, hungertimer = 175, thirst = 98, thirsttimer = 56, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 39, thirst = 98, thirsttimer = 100, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:24]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 84, thirst = 97, thirsttimer = 25, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:25]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 129, thirst = 97, thirsttimer = 70, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:26]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 98, hungertimer = 173, thirst = 97, thirsttimer = 114, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:27]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 97, hungertimer = 38, thirst = 96, thirsttimer = 39, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:28]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 97, hungertimer = 83, thirst = 96, thirsttimer = 84, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:28]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 97, hungertimer = 128, thirst = 95, thirsttimer = 9, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:29]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 97, hungertimer = 172, thirst = 95, thirsttimer = 53, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:30]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 96, hungertimer = 37, thirst = 95, thirsttimer = 98, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:31]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 96, hungertimer = 82, thirst = 94, thirsttimer = 23, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:31]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 96, hungertimer = 127, thirst = 94, thirsttimer = 68, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:32]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 96, hungertimer = 171, thirst = 94, thirsttimer = 112, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:33]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 95, hungertimer = 36, thirst = 93, thirsttimer = 37, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:34]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 95, hungertimer = 81, thirst = 93, thirsttimer = 82, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:34]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 95, hungertimer = 125, thirst = 92, thirsttimer = 6, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:35]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 95, hungertimer = 170, thirst = 92, thirsttimer = 51, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:36]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 94, hungertimer = 35, thirst = 92, thirsttimer = 96, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:37]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 94, hungertimer = 80, thirst = 91, thirsttimer = 21, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:38]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 94, hungertimer = 125, thirst = 91, thirsttimer = 66, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:38]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 94, hungertimer = 169, thirst = 91, thirsttimer = 110, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:39]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 93, hungertimer = 34, thirst = 90, thirsttimer = 35, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:40]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 93, hungertimer = 79, thirst = 90, thirsttimer = 80, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:41]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 93, hungertimer = 123, thirst = 89, thirsttimer = 4, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 22:41]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET hunger = 93, hungertimer = 166, thirst = 89, thirsttimer = 47, Lottery = 0, LotteryB = 0, comserv = 0, INP = 13, INC = 0, slayerpussy = 0 where uid = 1396
+[!] Unknown column 'slayerpussy' in 'field list'
+
+[2023-12-13 23:16]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `billboards`
+[!] Table 's17_iirp.billboards' doesn't exist
+
+[2023-12-13 23:16]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM safezones
+[!] Table 's17_iirp.safezones' doesn't exist
+
+[2023-12-13 23:16]
+Error ID: 1146
+Callback: UploadAntiCheat
+Query: SELECT * FROM `anticheat_settings`
+[!] Table 's17_iirp.anticheat_settings' doesn't exist
+
+[2023-12-13 23:19]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `billboards`
+[!] Table 's17_iirp.billboards' doesn't exist
+
+[2023-12-13 23:19]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM safezones
+[!] Table 's17_iirp.safezones' doesn't exist
+
+[2023-12-13 23:19]
+Error ID: 1146
+Callback: UploadAntiCheat
+Query: SELECT * FROM `anticheat_settings`
+[!] Table 's17_iirp.anticheat_settings' doesn't exist
+
+[2023-12-13 23:22]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET camera_x = '2713.151', camera_y = '-2494.328', camera_z = '14.843', pos_x = '2709.862', pos_y = '-2494.069', pos_z = '13.664', pos_a = '85.517', interior = 0, world = 0, health = '100.0', armor = '100.0', minutes = 65, warnings = 0, injured = 0, hospital = 0, spawnhealth = '50.0', spawnarmor = '0.0', jailtype = 0, jailtime = 0, hospitaltype1 = 0, hospitaltime1 = 0, refunded = 0, SchoolReward = 0, saveopengiftcd = 0 WHERE uid = 1396
+[!] Unknown column 'hospitaltype1' in 'field list'
+
+[2023-12-13 23:22]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bpRecipe = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 1396
+[!] Unknown column 'bpRecipe' in 'field list'
+
+[2023-12-16 18:22]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `billboards`
+[!] Table 's17_iirp.billboards' doesn't exist
+
+[2023-12-16 18:22]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM safezones
+[!] Table 's17_iirp.safezones' doesn't exist
+
+[2023-12-16 18:22]
+Error ID: 1146
+Callback: UploadAntiCheat
+Query: SELECT * FROM `anticheat_settings`
+[!] Table 's17_iirp.anticheat_settings' doesn't exist
+
+[2023-12-16 18:23]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET camera_x = '2741.932', camera_y = '-2498.158', camera_z = '15.138', pos_x = '2742.642', pos_y = '-2493.584', pos_z = '13.658', pos_a = '349.153', interior = 0, world = 0, health = '100.0', armor = '100.0', minutes = 65, warnings = 0, injured = 0, hospital = 0, spawnhealth = '50.0', spawnarmor = '0.0', jailtype = 0, jailtime = 0, hospitaltype1 = 0, hospitaltime1 = 0, refunded = 1, SchoolReward = 0, saveopengiftcd = 0 WHERE uid = 1396
+[!] Unknown column 'hospitaltype1' in 'field list'
+
+[2023-12-16 18:23]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET bpcash = 0, bpmaterials = 0, bpRecipe = 0, bppot = 0, bpcrack = 0, bpmeth = 0, bppainkillers = 0, bphpammo = 0, bppoisonammo = 0, bpfmjammo = 0, totalpatients = 0, totalfires = 0, rarecooldown = 0 WHERE uid = 1396
+[!] Unknown column 'bpRecipe' in 'field list'
+
